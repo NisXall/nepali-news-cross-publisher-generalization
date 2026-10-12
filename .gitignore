@@ -19,11 +19,6 @@ ENV/
 .env.*
 !.env.example
 
-# Datasets and generated data
-data/
-results/figures/
-results/tables/
-
 # Common local output and cache directories
 .cache/
 dist/

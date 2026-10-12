@@ -1,0 +1,11 @@
+metric,value
+total_rows,231216.0
+total_columns,4.0
+missing_category,0.0
+missing_source,0.0
+empty_content,30.0
+empty_heading,2.0
+num_categories,20.0
+num_sources,10.0
+median_word_count,177.0
+p95_word_count,786.0

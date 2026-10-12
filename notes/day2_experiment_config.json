@@ -1,0 +1,26 @@
+{
+  "dataset": "Suyogyart/np20ng",
+  "target_column": "category",
+  "text_column": "content",
+  "random_seed": 42,
+  "split_strategy": "StratifiedGroupKFold",
+  "primary_metric": "macro_f1",
+  "secondary_metrics": [
+    "accuracy",
+    "weighted_f1"
+  ],
+  "model": "LinearSVC",
+  "model_experiment": "bigram_linear_svm",
+  "svm": {
+    "C": 1.0
+  },
+  "tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_features": 300000,
+    "sublinear_tf": true
+  }
+}

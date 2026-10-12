@@ -19,8 +19,8 @@ ENV/
 .env.*
 !.env.example
 
-# Generated and derived project artifacts
-data/processed/
+# Datasets and generated data
+data/
 results/figures/
 results/tables/
 

@@ -1,0 +1,25 @@
+{
+  "source_only_majority_accuracy": 0.3152959089218205,
+  "source_category_counts": {
+    "Crimenews": 1,
+    "Educationpati": 1,
+    "Nepalipatra": 2,
+    "Nagarik": 6,
+    "Aarthiknews": 7,
+    "Gorkhapatra": 8,
+    "Setopati": 8,
+    "Ekantipur": 10,
+    "Nepalkhabar": 10,
+    "Onlinekhabar": 15
+  },
+  "eligible_held_out_sources": [
+    "Nagarik",
+    "Aarthiknews",
+    "Gorkhapatra",
+    "Setopati",
+    "Ekantipur",
+    "Nepalkhabar",
+    "Onlinekhabar"
+  ],
+  "candidate_rule": "at least 1,000 documents and at least 5 observed categories"
+}

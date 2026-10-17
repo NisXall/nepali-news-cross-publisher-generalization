@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "partition_sizes": {
+    "train": 138711,
+    "validation": 46237,
+    "test": 46238
+  },
+  "grouped_split_duplicate_audit": {
+    "normalized_duplicate_groups": 601,
+    "groups_crossing_partitions": 0,
+    "rows_in_groups_crossing_partitions": 0
+  },
+  "ordinary_random_split_duplicate_audit": {
+    "train_rows": 138711,
+    "validation_rows": 46237,
+    "test_rows": 46238,
+    "groups_crossing_partitions": 156
+  }
+}

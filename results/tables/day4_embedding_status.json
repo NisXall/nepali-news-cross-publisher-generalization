@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "sentence_transformers": false
+  },
+  "smoke_test": {
+    "status": "blocked",
+    "reason": "sentence-transformers is not installed",
+    "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  }
+}

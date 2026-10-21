@@ -1,0 +1,8 @@
+{
+  "python": "3.13.7",
+  "transformers_installed": false,
+  "torch_installed": false,
+  "model": "xlm-roberta-base",
+  "status": "blocked",
+  "reason": "transformers or torch is unavailable"
+}

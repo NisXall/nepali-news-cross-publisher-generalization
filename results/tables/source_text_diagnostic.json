@@ -1,0 +1,8 @@
+{
+  "status": "COMPLETED",
+  "task": "predict publisher/source from article text",
+  "accuracy": 0.7385210978220905,
+  "macro_f1": 0.6676678940702245,
+  "n_features": 10000,
+  "protocol": "fit on grouped train text and evaluate on grouped validation text"
+}

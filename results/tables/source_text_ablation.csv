@@ -1,0 +1,3 @@
+experiment,accuracy,macro_f1,weighted_f1,seconds,n_features,vectorizer,classifier,C,class_weight,stripped,diagnostic
+word_bigram_LinearSVC_c1_none,0.7621818024525813,0.7259312563123481,0.7590526015197501,220.08325309993234,10000,word_bigram,LinearSVC,1.0,none,False,category_with_original_text
+word_bigram_LinearSVC_c1_none,0.7618357592404351,0.7254729475404791,0.7586753399821266,304.86196080001537,10000,word_bigram,LinearSVC,1.0,none,True,category_with_limited_source_stripping

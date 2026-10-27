@@ -1,0 +1,20 @@
+{
+  "status": "COMPLETED",
+  "eligibility_rule": "at least 1,000 documents and at least 5 observed categories",
+  "sources": [
+    "Aarthiknews",
+    "Ekantipur",
+    "Gorkhapatra",
+    "Nagarik",
+    "Nepalkhabar",
+    "Onlinekhabar",
+    "Setopati"
+  ],
+  "aggregation": {
+    "macro_f1_mean": 0.4604545948291931,
+    "macro_f1_std": 0.150617327937114,
+    "accuracy_mean": 0.4441611471874916,
+    "weighted_f1_mean": 0.5032014184654863
+  },
+  "limitation": "held-out source category coverage differs; pooled averages are descriptive and not a single IID estimate"
+}

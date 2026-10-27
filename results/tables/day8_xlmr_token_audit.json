@@ -1,0 +1,32 @@
+{
+  "model": "xlm-roberta-base",
+  "max_length": 256,
+  "sample_size": 500,
+  "train": {
+    "rows": 500,
+    "p50": 282,
+    "p90": 888,
+    "p95": 1294,
+    "p99": 2402,
+    "max": 4360,
+    "truncation_rate": 0.568
+  },
+  "validation": {
+    "rows": 500,
+    "p50": 315,
+    "p90": 940,
+    "p95": 1225,
+    "p99": 2743,
+    "max": 5955,
+    "truncation_rate": 0.606
+  },
+  "test": {
+    "rows": 500,
+    "p50": 313,
+    "p90": 978,
+    "p95": 1244,
+    "p99": 2745,
+    "max": 4062,
+    "truncation_rate": 0.622
+  }
+}

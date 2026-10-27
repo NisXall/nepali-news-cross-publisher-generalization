@@ -1,0 +1,78 @@
+[
+  {
+    "condition": "B",
+    "description": "fixed duplicate-aware grouped split",
+    "status": "BOUNDED_COMPLETED",
+    "model": "xlm-roberta-base",
+    "model_revision": "local cached revision; exact commit unavailable",
+    "text_field": "content",
+    "preprocessing_version": "content-v1",
+    "label_names": [
+      "Arts",
+      "Automobile",
+      "Bank",
+      "Business",
+      "Crime",
+      "Economy",
+      "Education",
+      "Employment",
+      "Entertainment",
+      "Health",
+      "Lifestyle",
+      "Literature",
+      "Market",
+      "Opinion",
+      "Politics",
+      "Society",
+      "Sports",
+      "Technology",
+      "Tourism",
+      "World"
+    ],
+    "seed": 42,
+    "train_rows": 8192,
+    "validation_rows": 2048,
+    "test_rows": 2048,
+    "evaluation_limit": 2048,
+    "train_categories": 20,
+    "validation_categories": 20,
+    "test_categories": 20,
+    "max_length": 256,
+    "learning_rate": 2e-05,
+    "epochs": 1,
+    "batch_size": 4,
+    "gradient_accumulation": 4,
+    "effective_batch_size": 16,
+    "mixed_precision": "bf16",
+    "device": "cuda",
+    "cuda_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "package_versions": {
+      "transformers": "5.20.2",
+      "torch": "2.13.0+cu130"
+    },
+    "mean_training_loss": 1.5677039921283722,
+    "validation_history": [
+      {
+        "epoch": 1,
+        "accuracy": 0.7412109375,
+        "macro_f1": 0.5956757826465581,
+        "weighted_f1": 0.7218453616701483
+      }
+    ],
+    "best_epoch": 1,
+    "validation_metrics": {
+      "accuracy": 0.7412109375,
+      "macro_f1": 0.5956757826465581,
+      "weighted_f1": 0.7218453616701483
+    },
+    "test_metrics": {
+      "accuracy": 0.72998046875,
+      "macro_f1": 0.5805910958747718,
+      "weighted_f1": 0.7111452692309524
+    },
+    "checkpoint": "C:\\Tech\\projects\\nepali-nlp-study\\results\\checkpoints\\xlmr_B\\best",
+    "runtime_seconds": 379.07029189995956,
+    "protocol_note": "Repository has exact normalized duplicate grouping but no implemented Jaccard-0.8 MinHash/LSH near-duplicate safeguard; no such safeguard is claimed here.",
+    "warning": "Training and evaluation were intentionally capped by the available compute budget; this is not a full-data result."
+  }
+]

@@ -1,0 +1,4 @@
+condition,held_out_source,status,train_rows,validation_rows,test_rows,evaluation_rows,validation_accuracy,validation_macro_f1,validation_weighted_f1,test_accuracy,test_macro_f1,test_weighted_f1,runtime_seconds,notes
+A,,BOUNDED_COMPLETED,8192,2048,2048,2048,0.743652,0.592688,0.713608,0.727539,0.569642,0.697651,388.911131,"ordinary stratified split; duplicate leakage permitted; one epoch"
+B,,BOUNDED_COMPLETED,8192,2048,2048,2048,0.741211,0.595676,0.721845,0.729980,0.580591,0.711145,379.070292,"fixed duplicate-aware split; one epoch"
+C,Aarthiknews,PARTIAL_BOUNDED,8192,2048,2048,2048,,,0.408203,0.130121,0.425265,,"first eligible held-out source completed; sweep stopped before validation/status finalization"

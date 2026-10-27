@@ -1,0 +1,46 @@
+{
+  "python": "3.13.7",
+  "seed": 42,
+  "splits": {
+    "train": 138711,
+    "validation": 46237,
+    "test": 46238,
+    "protocol": "existing duplicate-aware fixed partitions"
+  },
+  "dependencies": {
+    "torch": "2.14.1+cpu",
+    "transformers": "5.20.2",
+    "sentence-transformers": "6.2.0",
+    "accelerate": "1.15.0"
+  },
+  "models": {
+    "embedding": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "transformer": "xlm-roberta-base"
+  },
+  "hardware": {
+    "cuda_available": false,
+    "execution": "CPU"
+  },
+  "artifacts": [
+    "results/tables/day8_embedding_status.json",
+    "results/tables/day8_embedding_pilot.csv",
+    "results/tables/day8_xlmr_smoke.json",
+    "results/tables/day8_xlmr_token_audit.json",
+    "results/tables/day8_xlmr_training_pilot.json",
+    "results/tables/day8_xlmr_training_pilot_gpu_8192.json",
+    "results/tables/day8_embedding_pilot_gpu_50000.csv",
+    "results/tables/day8_embedding_status_gpu_50000.json",
+    "results/tables/consolidated_model_results.csv",
+    "results/tables/calibration_abstention_metrics.json",
+    "results/tables/calibration_validation_reliability.csv",
+    "results/tables/calibration_test_reliability.csv",
+    "results/figures/calibration_reliability.png",
+    "results/models/reference_calibrated_bundle.joblib"
+  ],
+  "calibration": {
+    "base_model": "TF-IDF word unigram/bigram + LinearSVC(C=1.0)",
+    "calibrator": "multiclass logistic regression on validation decision scores",
+    "threshold_selection": "maximum validation coverage subject to selective risk <= 0.20",
+    "test_partition_used_for_fitting": false
+  }
+}

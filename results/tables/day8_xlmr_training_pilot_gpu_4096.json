@@ -1,0 +1,18 @@
+{
+  "status": "PILOT_COMPLETED",
+  "model": "xlm-roberta-base",
+  "train_rows": 4096,
+  "validation_rows": 1024,
+  "max_length": 256,
+  "epochs": 1,
+  "batch_size": 4,
+  "learning_rate": 2e-05,
+  "mean_training_loss": 1.6856216962187318,
+  "validation_accuracy": 0.607421875,
+  "validation_macro_f1": 0.40630425525486924,
+  "seconds": 227.08934189996216,
+  "device": "cuda",
+  "cuda_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "peak_cuda_memory_mb": 5357.2587890625,
+  "warning": "This is a bounded pilot, not a full benchmark or final model."
+}

@@ -1,0 +1,38 @@
+{
+  "model": "xlm-roberta-base",
+  "model_revision": "local cached revision; exact commit unavailable",
+  "conditions": {
+    "A": "ordinary stratified random split; duplicate leakage permitted",
+    "B": "existing fixed duplicate-aware train/validation/test partitions",
+    "C": "leave-one-source-out with held-out publisher excluded from train and validation"
+  },
+  "seed": 42,
+  "max_length": 256,
+  "learning_rate": 0.00002,
+  "epochs": 1,
+  "batch_size": 4,
+  "gradient_accumulation": 4,
+  "effective_batch_size": 16,
+  "train_limit": 8192,
+  "evaluation_limit": 2048,
+  "eligibility_rule": "at least 1,000 documents and at least 5 observed categories",
+  "near_duplicate_protocol": {
+    "documented_intended_threshold": "Jaccard 0.8 using MinHash/LSH",
+    "implemented_repository_safeguard": "exact normalized duplicate grouping only",
+    "discrepancy": "No MinHash/LSH implementation was found, so no Jaccard-0.8 near-duplicate claim is made."
+  },
+  "completed_conditions": [
+    "A bounded",
+    "B bounded",
+    "C Aarthiknews bounded test evaluation"
+  ],
+  "stopped_conditions": [
+    "C Ekantipur",
+    "C Gorkhapatra",
+    "C Nagarik",
+    "C Nepalkhabar",
+    "C Onlinekhabar",
+    "C Setopati"
+  ],
+  "stopping_reason": "The A/B/C sweep exceeded the practical compute window; no omitted fold was reported as completed."
+}

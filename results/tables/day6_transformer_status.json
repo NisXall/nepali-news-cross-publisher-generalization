@@ -1,8 +1,10 @@
 {
   "python": "3.13.7",
-  "transformers_installed": false,
-  "torch_installed": false,
+  "transformers_installed": true,
+  "torch_installed": true,
   "model": "xlm-roberta-base",
-  "status": "blocked",
-  "reason": "transformers or torch is unavailable"
+  "torch_version": "2.14.1+cpu",
+  "cuda_available": false,
+  "status": "ready",
+  "hidden_size": 768
 }

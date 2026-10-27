@@ -24,4 +24,13 @@ For source-held-out experiments, candidates are selected before looking at
 model scores: at least 1,000 documents and at least 5 observed categories.
 This excludes tiny or single-category publishers while acknowledging that
 category coverage still differs by source. Candidate selection does not claim
-that the source-held-out experiment has been run.
+that every source has full category coverage. The classical benchmark now runs
+leave-one-source-out evaluation for the seven eligible publishers and reports
+macro-F1 over labels present in each held-out source, while listing absent
+labels explicitly.
+
+The final reference test is evaluated only after selecting the configuration
+from training and validation. LinearSVC decision scores are retained for
+calibration-ready analysis but are not probabilities. Document-level bootstrap
+intervals are conditional on the fixed test partition and do not represent
+publisher-level uncertainty.

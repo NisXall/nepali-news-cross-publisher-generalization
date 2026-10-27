@@ -21,6 +21,9 @@ ENV/
 
 # Common local output and cache directories
 .cache/
+/results/cache/
+/results/checkpoints/
+/results/models/
 dist/
 build/
 *.log

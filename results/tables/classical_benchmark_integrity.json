@@ -1,0 +1,15 @@
+{
+  "partition_rows": {
+    "train": 138711,
+    "validation": 46237,
+    "test": 46238
+  },
+  "original_index_disjoint": true,
+  "duplicate_groups_crossing_partitions": 0,
+  "category_counts": {
+    "train": 20,
+    "validation": 20,
+    "test": 20
+  },
+  "all_expected_categories_present": true
+}

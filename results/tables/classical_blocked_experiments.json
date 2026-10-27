@@ -1,0 +1,19 @@
+{
+  "character_tfidf": {
+    "status": "BLOCKED",
+    "reason": "Full-corpus character TF-IDF at 100k and 30k feature caps exceeded approximately 10 minutes and 1.2-1.5 GB resident memory without completing.",
+    "continuation": "Run on a resource with more memory/CPU or a predeclared representative subset; do not compare subset scores directly with full-corpus scores."
+  },
+  "word_plus_character": {
+    "status": "NOT RUN",
+    "reason": "Depends on the blocked character representation and was not started."
+  },
+  "multiclass_logistic_regression_rerun": {
+    "status": "NOT RUN",
+    "reason": "Equivalent verified unigram and bigram LogisticRegression results already exist in baseline_comparison.csv; a new bounded rerun exceeded 15 minutes and was stopped."
+  },
+  "new_bounded_validation_sweep": {
+    "status": "BLOCKED",
+    "reason": "The planned multi-configuration word-only process remained too expensive at the current machine resource limit and was stopped before writing a complete comparison table."
+  }
+}

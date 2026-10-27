@@ -1,0 +1,12 @@
+model,validation_accuracy,validation_macro_f1,validation_weighted_f1,test_accuracy,test_macro_f1,test_weighted_f1,training_status,notes
+TF-IDF unigram + LogisticRegression,0.742868,0.702834,0.739643,,,,"COMPLETE","fixed validation baseline"
+TF-IDF unigram/bigram + LogisticRegression,0.767848,0.724280,0.763907,,,,"COMPLETE","fixed validation baseline"
+TF-IDF unigram/bigram + LinearSVC,0.786751,0.751617,0.783779,0.784960,0.750360,0.781553,"COMPLETE","frozen reference model; 300000 max features"
+Best character/word-character baseline,,,,,,,"BLOCKED","resource cost documented in classical_blocked_experiments.json"
+Multilingual MiniLM + LogisticRegression,0.520000,0.342700,0.488100,,,,"PILOT","1000 train/250 validation pilot; not a full benchmark"
+Multilingual MiniLM + LinearSVC,0.628000,0.537600,0.609300,,,,"PILOT","1000 train/250 validation pilot; not a full benchmark"
+Multilingual MiniLM + LinearSVC,0.708956,0.625281,0.695645,0.711449,0.628797,0.697890,"COMPLETE","full fixed partitions; selected on validation macro-F1; one final test evaluation"
+XLM-RoBERTa-base (B bounded),0.741211,0.595676,0.721845,0.729980,0.580591,0.711145,"BOUNDED PILOT","8,192 train/2,048 evaluation rows; one epoch; not comparable to full fixed-partition results"
+XLM-RoBERTa,,,,,,,"PILOT ONLY","forward smoke and bounded CPU training pilot; no final test evaluation"
+XLM-RoBERTa-base (A matched 50k),0.833800,0.789688,0.832503,0.836400,0.792075,0.835555,"MATCHED_BUDGET_COMPLETE","50,000 train/10,000 validation/10,000 test; one epoch; same manifest as matched baselines"
+XLM-RoBERTa-base (B matched 50k),0.828800,0.788297,0.826998,0.822000,0.778199,0.820370,"MATCHED_BUDGET_COMPLETE","50,000 train/10,000 validation/10,000 test; one epoch; same manifest as matched baselines"

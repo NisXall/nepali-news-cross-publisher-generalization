@@ -1,0 +1,3 @@
+model,classifier,accuracy,macro_f1,weighted_f1,classifier_seconds
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 + LinearSVC,LinearSVC,0.7089560308843567,0.6252806002393819,0.6956448747759889,237.80753950006329
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 + LogisticRegression,LogisticRegression,0.6954819733114173,0.6101712074974486,0.6859224567723445,75.58325800008606

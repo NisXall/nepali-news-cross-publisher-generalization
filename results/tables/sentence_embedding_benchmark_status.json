@@ -1,0 +1,57 @@
+{
+  "status": "FINAL_COMPLETED",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "model_revision": "main",
+  "preprocessing_version": "content-v1",
+  "input_field": "content",
+  "normalization": "fill missing content with empty string; cast to string; no additional normalization",
+  "seed": 42,
+  "partition_sizes": {
+    "train": 138711,
+    "validation": 46237,
+    "test": 46238
+  },
+  "embedding_dimension": 384,
+  "normalize_embeddings": true,
+  "batch_size": 128,
+  "device": "cuda",
+  "cuda_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "package_versions": {
+    "sentence-transformers": "6.2.0",
+    "torch": "2.13.0+cu130",
+    "scikit-learn": "1.9.1"
+  },
+  "cache": {
+    "train": {
+      "cache": "miss",
+      "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_train_10f08644a10faf7158a2.npy",
+      "rows": 138711,
+      "dimension": 384,
+      "seconds": 297.0494446000084
+    },
+    "validation": {
+      "cache": "miss",
+      "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_validation_6758ff1067e3d92ac21e.npy",
+      "rows": 46237,
+      "dimension": 384,
+      "seconds": 100.63193320005666
+    },
+    "test": {
+      "cache": "miss",
+      "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_test_dbeb8a64295bda19eb1d.npy",
+      "rows": 46238,
+      "dimension": 384,
+      "seconds": 102.02160180010833
+    }
+  },
+  "validation_metrics_path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\sentence_embedding_validation_metrics.csv",
+  "selected_classifier": "LinearSVC",
+  "selection_metric": "macro_f1",
+  "selection_value": 0.6252806002393819,
+  "test_evaluation_count": 1,
+  "test_metrics_path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\sentence_embedding_final_test_metrics.json",
+  "test_predictions_path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\sentence_embedding_final_test_predictions.csv",
+  "model_bundle_path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\models\\sentence_embedding_reference_bundle.joblib",
+  "total_seconds": 823.6657956999261,
+  "warning": "Pilot artifacts remain separate; this is the final full fixed-partition embedding benchmark."
+}

@@ -1,0 +1,8 @@
+{
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 + LinearSVC",
+  "classifier": "LinearSVC",
+  "accuracy": 0.7114494571564514,
+  "macro_f1": 0.6287973422440146,
+  "weighted_f1": 0.6978903891661025,
+  "classifier_seconds": 0.09711209998931736
+}

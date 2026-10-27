@@ -1,0 +1,51 @@
+{
+  "status": "COMPLETED",
+  "protocol": "fit reference configuration on fixed train partition only; evaluate once on untouched test partition",
+  "config": {
+    "word_ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_features": 300000,
+    "sublinear_tf": true,
+    "classifier": "LinearSVC",
+    "C": 1.0,
+    "class_weight": null
+  },
+  "labels": [
+    "Arts",
+    "Automobile",
+    "Bank",
+    "Business",
+    "Crime",
+    "Economy",
+    "Education",
+    "Employment",
+    "Entertainment",
+    "Health",
+    "Lifestyle",
+    "Literature",
+    "Market",
+    "Opinion",
+    "Politics",
+    "Society",
+    "Sports",
+    "Technology",
+    "Tourism",
+    "World"
+  ],
+  "bootstrap": {
+    "method": "document-level bootstrap with 1000 resamples and seed 42",
+    "population": "the fixed test documents, conditional on this test partition",
+    "limitation": "does not capture publisher-level or split-level uncertainty",
+    "accuracy_95ci": [
+      0.7813470522081405,
+      0.7885094511008262
+    ],
+    "macro_f1_95ci": [
+      0.7452759480902139,
+      0.7552935133284423
+    ]
+  }
+}

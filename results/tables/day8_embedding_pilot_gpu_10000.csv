@@ -1,0 +1,3 @@
+model,split,accuracy,macro_f1,weighted_f1,classifier_seconds,embedding_dimension
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 + LogisticRegression,fixed validation,0.6396,0.5268581686179898,0.6219353909909964,1.6744685999583453,384
+sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 + LinearSVC,fixed validation,0.66,0.5608292500718017,0.6418192559616478,13.839684800012037,384

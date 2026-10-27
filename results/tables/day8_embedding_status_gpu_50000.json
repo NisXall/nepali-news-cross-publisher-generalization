@@ -1,0 +1,26 @@
+{
+  "status": "PILOT_COMPLETED",
+  "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "preprocessing_version": "content-v1",
+  "train_rows": 50000,
+  "validation_rows": 12500,
+  "embedding_dimension": 384,
+  "device": "cuda",
+  "cuda_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "smoke_shape": [
+    1,
+    384
+  ],
+  "train_cache": {
+    "cache": "miss",
+    "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_train_pilot_50000_9c4337b7e3dd4e683b19.npy",
+    "seconds": 94.86459509993438
+  },
+  "validation_cache": {
+    "cache": "miss",
+    "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_validation_pilot_50000_59d561ede1e99890a4c3.npy",
+    "seconds": 24.69565559993498
+  },
+  "metrics_path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\day8_embedding_pilot.csv",
+  "warning": "Pilot uses prefixes of fixed partitions and is not a full benchmark."
+}

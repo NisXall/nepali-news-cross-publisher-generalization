@@ -1,0 +1,5 @@
+{
+  "grouped_duplicate_groups_crossing": 0,
+  "random_duplicate_groups_crossing": 156,
+  "interpretation": "score differences combine duplicate leakage exposure with changed source/category composition; they are not causal estimates of leakage alone"
+}

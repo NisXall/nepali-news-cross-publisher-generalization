@@ -1,0 +1,3 @@
+experiment,accuracy,macro_f1,weighted_f1,seconds,n_features,vectorizer,classifier,C,class_weight,stripped,split
+word_bigram_LinearSVC_c1_none,0.7621818024525813,0.7259312563123481,0.7590526015197501,217.3800309000071,10000,word_bigram,LinearSVC,1.0,none,False,fixed duplicate-aware grouped
+word_bigram_LinearSVC_c1_none,0.758872764236434,0.7239245240655182,0.7552176854138294,260.00930239993613,10000,word_bigram,LinearSVC,1.0,none,False,ordinary stratified random

@@ -1,0 +1,43 @@
+{
+  "status": "COMPLETED",
+  "model": "TF-IDF word unigram/bigram + LinearSVC(C=1.0)",
+  "seed": 42,
+  "protocol": "base classifier fit on train; calibrator fit on validation decision scores; test evaluated once",
+  "calibration_method": "multiclass logistic regression (softmax calibration) on validation scores",
+  "validation_calibration": {
+    "accuracy": 0.7915522200834829,
+    "macro_f1": 0.7594021340967596,
+    "brier_score": 0.014746407665316676,
+    "log_loss": 0.6252655246144013,
+    "ece": 0.017371976837385943,
+    "binning": "10 equal-width confidence bins"
+  },
+  "test_calibration": {
+    "accuracy": 0.7860634110471906,
+    "macro_f1": 0.752844141034575,
+    "brier_score": 0.015156776942575747,
+    "log_loss": 0.6443451304940251,
+    "ece": 0.020901756003423366,
+    "binning": "10 equal-width confidence bins"
+  },
+  "abstention_policy": {
+    "threshold": 0.29319883795485374,
+    "target_selective_risk": 0.2,
+    "selection_criterion": "maximum validation coverage subject to selective risk <= 0.20",
+    "validation_coverage": 0.9830871380063585,
+    "validation_selective_risk": 0.2,
+    "validation_abstained_percent": 1.6912861993641504
+  },
+  "test_abstention": {
+    "threshold": 0.29319883795485374,
+    "accepted": 45478,
+    "total": 46238,
+    "coverage": 0.9835633029110256,
+    "abstained_percent": 1.643669708897444,
+    "accuracy_accepted": 0.7941861999208408,
+    "macro_f1_accepted": 0.7613843492122754,
+    "selective_risk": 0.20581380007915914
+  },
+  "runtime_seconds": 337.4907881000545,
+  "caveat": "Calibration on known sources does not guarantee calibration on unseen publishers or future data."
+}

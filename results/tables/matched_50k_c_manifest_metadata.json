@@ -1,0 +1,137 @@
+{
+  "status": "COMPLETED",
+  "condition": "C",
+  "seed": 42,
+  "train_rows": 50000,
+  "validation_rows": 10000,
+  "test_policy": "all eligible held-out publisher rows",
+  "eligibility_rule": "at least 1,000 documents and at least 5 observed categories",
+  "sources": {
+    "Aarthiknews": {
+      "paths": {
+        "train": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Aarthiknews_train.parquet",
+        "validation": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Aarthiknews_validation.parquet",
+        "test": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Aarthiknews_test.parquet"
+      },
+      "rows": {
+        "train": 50000,
+        "validation": 10000,
+        "test": 25965
+      },
+      "categories": {
+        "train": 20,
+        "validation": 20,
+        "test": 7
+      },
+      "held_out_source": "Aarthiknews"
+    },
+    "Ekantipur": {
+      "paths": {
+        "train": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Ekantipur_train.parquet",
+        "validation": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Ekantipur_validation.parquet",
+        "test": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Ekantipur_test.parquet"
+      },
+      "rows": {
+        "train": 50000,
+        "validation": 10000,
+        "test": 29875
+      },
+      "categories": {
+        "train": 20,
+        "validation": 20,
+        "test": 10
+      },
+      "held_out_source": "Ekantipur"
+    },
+    "Gorkhapatra": {
+      "paths": {
+        "train": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Gorkhapatra_train.parquet",
+        "validation": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Gorkhapatra_validation.parquet",
+        "test": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Gorkhapatra_test.parquet"
+      },
+      "rows": {
+        "train": 50000,
+        "validation": 10000,
+        "test": 5059
+      },
+      "categories": {
+        "train": 20,
+        "validation": 20,
+        "test": 8
+      },
+      "held_out_source": "Gorkhapatra"
+    },
+    "Nagarik": {
+      "paths": {
+        "train": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Nagarik_train.parquet",
+        "validation": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Nagarik_validation.parquet",
+        "test": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Nagarik_test.parquet"
+      },
+      "rows": {
+        "train": 50000,
+        "validation": 10000,
+        "test": 11106
+      },
+      "categories": {
+        "train": 20,
+        "validation": 20,
+        "test": 6
+      },
+      "held_out_source": "Nagarik"
+    },
+    "Nepalkhabar": {
+      "paths": {
+        "train": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Nepalkhabar_train.parquet",
+        "validation": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Nepalkhabar_validation.parquet",
+        "test": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Nepalkhabar_test.parquet"
+      },
+      "rows": {
+        "train": 50000,
+        "validation": 10000,
+        "test": 69504
+      },
+      "categories": {
+        "train": 20,
+        "validation": 20,
+        "test": 10
+      },
+      "held_out_source": "Nepalkhabar"
+    },
+    "Onlinekhabar": {
+      "paths": {
+        "train": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Onlinekhabar_train.parquet",
+        "validation": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Onlinekhabar_validation.parquet",
+        "test": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Onlinekhabar_test.parquet"
+      },
+      "rows": {
+        "train": 50000,
+        "validation": 10000,
+        "test": 66716
+      },
+      "categories": {
+        "train": 20,
+        "validation": 20,
+        "test": 15
+      },
+      "held_out_source": "Onlinekhabar"
+    },
+    "Setopati": {
+      "paths": {
+        "train": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Setopati_train.parquet",
+        "validation": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Setopati_validation.parquet",
+        "test": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_c_manifests\\Setopati_test.parquet"
+      },
+      "rows": {
+        "train": 50000,
+        "validation": 10000,
+        "test": 15541
+      },
+      "categories": {
+        "train": 20,
+        "validation": 20,
+        "test": 8
+      },
+      "held_out_source": "Setopati"
+    }
+  }
+}

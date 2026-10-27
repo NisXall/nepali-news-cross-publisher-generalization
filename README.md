@@ -190,7 +190,38 @@ interpreting random-split results.
 
 Candidate source-held-out publishers are selected using at least 1,000
 documents and at least 5 observed categories. No source-held-out model score
-has been claimed yet.
+has been used for the original headline baseline. The completed classical
+cross-source benchmark is documented in
+[notes/classical_benchmark.md](notes/classical_benchmark.md).
+
+The frozen reference model was evaluated once on the untouched test partition:
+**0.7850 accuracy, 0.7504 macro-F1, and 0.7816 weighted-F1**. Its
+document-level bootstrap 95% intervals are **[0.7813, 0.7885]** for accuracy
+and **[0.7453, 0.7553]** for macro-F1. These intervals are conditional on the
+fixed test documents and do not estimate publisher-level uncertainty.
+
+The source-held-out exploratory evaluation used a bounded 10,000-feature word
+bigram configuration. Across seven eligible publishers, mean
+present-label macro-F1 was **0.4605** with standard deviation **0.1506**.
+Source-held-out results are descriptive because category coverage differs by
+publisher.
+
+### Calibration and abstention
+
+The frozen LinearSVC reference model now has a leakage-safe experimental
+confidence layer. The base classifier is fit on train only; a multiclass
+logistic calibrator is fit on validation decision scores, and a threshold is
+selected on validation to maximize coverage subject to selective risk at most
+0.20. On the untouched test partition, calibrated probabilities had Brier
+score **0.0152**, log loss **0.6443**, and 10-bin ECE **0.0209**. The frozen
+abstention policy accepted **98.36%** of test examples with **0.7942**
+accuracy and **0.7614** macro-F1 among accepted predictions; selective risk
+was **0.2058**. This does not establish calibration on unseen publishers or
+future data.
+
+The saved bundle is
+`results/models/reference_calibrated_bundle.joblib`; metrics, reliability
+tables, and the plot are under `results/tables/` and `results/figures/`.
 
 ### Day 4: sentence embeddings
 
@@ -203,9 +234,19 @@ sentence-embedding model. The reusable implementation supports:
 - cache keys based on model name, preprocessing version, and document IDs;
 - train-only Logistic Regression evaluation on fixed partitions.
 
-The full experiment was **not run** because the project environment does not
-have `sentence-transformers` and no verified local model cache was available.
-No embedding metric or claim of improvement is reported.
+The full fixed-partition benchmark is now complete. The model was run with
+normalized 384-dimensional embeddings, Logistic Regression and LinearSVC were
+compared on validation macro-F1, and only the selected LinearSVC was evaluated
+on test. The final artifacts are
+`results/tables/sentence_embedding_benchmark_status.json`,
+`results/tables/sentence_embedding_validation_metrics.csv`,
+`results/tables/sentence_embedding_final_test_metrics.json`, and
+`results/tables/sentence_embedding_final_test_predictions.csv`.
+
+Validation selected LinearSVC with **0.6253 macro-F1**. On the untouched test
+partition it achieved **0.7114 accuracy, 0.6288 macro-F1, and 0.6979
+weighted-F1**. Earlier 1,000/250 and 50,000/12,500 runs remain pilots and are
+not substituted for this full result.
 
 ### Day 6: transformer preparation
 
@@ -218,10 +259,31 @@ Day 6 prepares an XLM-RoBERTa pipeline. A complete run would need:
 - checkpoint selection using validation macro-F1;
 - checkpoint save/reload verification.
 
-The current project environment does not have the required transformer and
-PyTorch packages available through the project `.venv`, and the model weights
-are not locally cached. CUDA is therefore not available in the selected
-environment. No transformer training or transformer metric is reported.
+The initial Day 6 check found the required packages and model weights missing.
+The environment was subsequently prepared and the neural experiments were
+advanced. PyTorch, Transformers, and Sentence Transformers are now installed,
+XLM-R weights are cached, and a later check found CUDA enabled on an NVIDIA
+GeForce RTX 4060 Laptop GPU. Sentence-embedding smoke/pilot and XLM-R smoke,
+token audit, and bounded training pilot results are documented in
+[notes/neural_experiments.md](notes/neural_experiments.md). Full neural
+XLM-R fine-tuning remains incomplete; its pilot scores are not full benchmark
+scores. The sentence-embedding benchmark now has one final test evaluation.
+
+The completed sentence-embedding benchmark encoded all 138,711 training,
+46,237 validation, and 46,238 test rows. It used
+`sentence-transformers==6.2.0`, `torch==2.13.0+cu130`, and
+`scikit-learn==1.9.1` on an NVIDIA GeForce RTX 4060 Laptop GPU. Larger CUDA
+XLM-R pilots used 8,192 training/2,048 validation examples and remain pilots.
+
+The XLM-R condition runner and protocol manifest are
+[src/day8_neural_experiments.py](src/day8_neural_experiments.py),
+`results/tables/xlmr_benchmark_protocol.json`, and
+`results/tables/xlmr_condition_summary.csv`. A one-epoch CUDA sweep was
+bounded to 8,192 training and 2,048 evaluation rows per condition because the
+existing 8,192-row pilot took 443 seconds before multi-fold evaluation. A and
+B completed as bounded runs; only the Aarthiknews C fold reached test
+prediction before the sweep was stopped. These are not full-data or complete
+LOSO results.
 
 ### Day 7: model comparison
 
@@ -230,7 +292,50 @@ marked as unavailable rather than assigned zero scores. The current
 defensible conclusion is:
 
 > Bigram TF-IDF with LinearSVC is the strongest verified model in this
-> repository so far. Embedding and transformer superiority remain untested.
+> repository so far. The full MiniLM embedding benchmark is now complete, but
+> it does not exceed the classical reference; XLM-R remains pilot-only.
+
+### Classical cross-source benchmark
+
+The reusable implementation is
+`src/classical_benchmark.py`. It verifies partition integrity, writes final
+test predictions and decision scores, runs leave-one-source-out evaluation,
+compares the random and duplicate-aware splits, predicts source from text,
+and creates a review table for conflicting duplicate labels.
+
+Character n-gram and word-plus-character experiments were blocked by resource
+limits in the current environment. Existing verified LogisticRegression
+results remain in `results/tables/baseline_comparison.csv`; no replacement
+score was fabricated.
+
+### Matched 50k A/B comparison
+
+The matched-budget experiment uses immutable manifests under
+`results/tables/matched_50k_manifests/`: 50,000 training rows and 10,000 rows
+each for validation and test, with all 20 labels present. The same manifests
+were used for TF-IDF, MiniLM, and XLM-R within each condition. Consolidated
+results are in `results/tables/matched_50k_ab_comparison.csv`.
+
+| Condition | Model | Test accuracy | Test macro-F1 |
+|---|---|---:|---:|
+| A | TF-IDF + LinearSVC | 0.7640 | 0.7208 |
+| A | MiniLM + LinearSVC | 0.6985 | 0.6046 |
+| A | XLM-R | **0.8364** | **0.7921** |
+| B | TF-IDF + LinearSVC | 0.7590 | 0.7234 |
+| B | MiniLM + LinearSVC | 0.6982 | 0.6120 |
+| B | XLM-R | **0.8220** | **0.7782** |
+
+These are complete one-epoch matched-budget results, not full-data results.
+The corrected matched-manifest audit completed on 140,000 A/B manifest
+rows. It found 22,329 exact-verified Jaccard-0.8 pairs in 21,703 groups,
+including 95 groups crossing A boundaries and 82 crossing B boundaries.
+Only 42 A test rows (0.420%) and 33 B test rows (0.330%) belonged to a group
+containing a same-condition training row. The affected XLM-R rows were not
+more accurate than unaffected rows. TF-IDF and MiniLM diagnostics are recorded
+alongside the XLM-R results in
+`results/tables/matched_50k_near_duplicate_model_impact.json`.
+The partitions therefore remain exact-normalized-duplicate-aware, not fully
+near-duplicate-safe.
 
 ## Reproducibility
 
@@ -276,6 +381,9 @@ diagnostics, and a partition-distribution figure under `results/`.
 .\.venv\Scripts\python.exe src\day5_training_size.py
 .\.venv\Scripts\python.exe src\day6_transformer_setup.py
 .\.venv\Scripts\python.exe src\day7_model_comparison.py
+.\.venv\Scripts\python.exe src\classical_benchmark.py --experiment final-test
+.\.venv\Scripts\python.exe src\classical_benchmark.py --experiment source-held-out
+.\.venv\Scripts\python.exe -m src.calibration_abstention
 ```
 
 Day 4 and Day 6 report explicit blocked statuses when optional dependencies or
@@ -285,13 +393,15 @@ results.
 ### Run the tests
 
 ```powershell
-.\.venv\Scripts\python.exe -m pytest tests\test_day3_splits.py -q
+.\.venv\Scripts\python.exe -m pytest tests\test_day3_splits.py tests\test_classical_benchmark.py tests\test_day8_neural.py tests\test_calibration_abstention.py -q
 ```
 
 The tests verify:
 
 - no normalized duplicate group crosses grouped partitions;
 - original document indices are disjoint across train, validation, and test.
+- final test and source-held-out metric artifacts use explicit category
+  handling and reproducible configurations.
 
 ### Execute notebooks
 
@@ -367,9 +477,12 @@ When extending this project:
 
 This study currently has several important limitations:
 
-- The reported model scores are validation scores, not final test scores.
-- A source-held-out experiment has been designed but not completed.
-- Embedding and transformer baselines have not been run.
+- Classical headline scores are supplemented by a single frozen final test
+  evaluation; neural pilots remain validation-only.
+- Source-held-out classical evaluation is complete for seven eligible
+  publishers, while neural source-held-out evaluation was not run.
+- XLM-R has only been run in bounded pilots; the full MiniLM embedding result
+  is documented separately and does not exceed the classical reference.
 - Category/source association may create shortcuts in random or grouped
   evaluations.
 - Duplicate groups with conflicting labels remain unresolved.

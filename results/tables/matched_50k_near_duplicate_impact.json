@@ -1,0 +1,547 @@
+{
+  "audit_file": "results/tables/matched_50k_near_duplicate_audit.json",
+  "conditions": {
+    "A": {
+      "condition": "A",
+      "test_rows": 10000,
+      "affected_test_documents": 42,
+      "affected_test_percentage": 0.42,
+      "same_label_test_documents": 39,
+      "same_label_percentage_of_affected": 92.85714285714286,
+      "conflicting_label_test_documents": 3,
+      "conflicting_label_percentage_of_affected": 7.142857142857143,
+      "affected_by_source": {
+        "Aarthiknews": 3,
+        "Educationpati": 9,
+        "Nagarik": 2,
+        "Nepalipatra": 11,
+        "Nepalkhabar": 4,
+        "Onlinekhabar": 11,
+        "Setopati": 2
+      },
+      "affected_by_category": {
+        "Automobile": 1,
+        "Bank": 10,
+        "Business": 1,
+        "Economy": 2,
+        "Education": 10,
+        "Lifestyle": 10,
+        "Market": 1,
+        "Politics": 1,
+        "Society": 4,
+        "Technology": 1,
+        "Tourism": 1
+      },
+      "same_label_by_source": {
+        "Aarthiknews": 2,
+        "Educationpati": 9,
+        "Nagarik": 2,
+        "Nepalipatra": 10,
+        "Nepalkhabar": 3,
+        "Onlinekhabar": 11,
+        "Setopati": 2
+      },
+      "conflict_by_source": {
+        "Aarthiknews": 1,
+        "Nepalipatra": 1,
+        "Nepalkhabar": 1
+      },
+      "groups_with_test_and_train": 42,
+      "groups_with_label_conflict": 3,
+      "prediction_correctness": {
+        "xlmr": {
+          "affected_rows": 42,
+          "affected_accuracy": 0.7857142857142857,
+          "unaffected_rows": 9958,
+          "unaffected_accuracy": 0.8366137778670416
+        }
+      },
+      "by_source": [
+        {
+          "value": "Aarthiknews",
+          "test_documents": 1132,
+          "affected_documents": 3,
+          "affected_percentage": 0.26501766784452296,
+          "conflicting_affected_documents": 1
+        },
+        {
+          "value": "Crimenews",
+          "test_documents": 162,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Educationpati",
+          "test_documents": 71,
+          "affected_documents": 9,
+          "affected_percentage": 12.676056338028168,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Ekantipur",
+          "test_documents": 1308,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Gorkhapatra",
+          "test_documents": 223,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Nagarik",
+          "test_documents": 503,
+          "affected_documents": 2,
+          "affected_percentage": 0.3976143141153081,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Nepalipatra",
+          "test_documents": 83,
+          "affected_documents": 11,
+          "affected_percentage": 13.253012048192772,
+          "conflicting_affected_documents": 1
+        },
+        {
+          "value": "Nepalkhabar",
+          "test_documents": 2953,
+          "affected_documents": 4,
+          "affected_percentage": 0.13545546901456146,
+          "conflicting_affected_documents": 1
+        },
+        {
+          "value": "Onlinekhabar",
+          "test_documents": 2903,
+          "affected_documents": 11,
+          "affected_percentage": 0.37891836031691356,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Setopati",
+          "test_documents": 662,
+          "affected_documents": 2,
+          "affected_percentage": 0.3021148036253776,
+          "conflicting_affected_documents": 0
+        }
+      ],
+      "by_category": [
+        {
+          "value": "Arts",
+          "test_documents": 333,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Automobile",
+          "test_documents": 223,
+          "affected_documents": 1,
+          "affected_percentage": 0.4484304932735426,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Bank",
+          "test_documents": 455,
+          "affected_documents": 10,
+          "affected_percentage": 2.197802197802198,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Business",
+          "test_documents": 504,
+          "affected_documents": 1,
+          "affected_percentage": 0.1984126984126984,
+          "conflicting_affected_documents": 1
+        },
+        {
+          "value": "Crime",
+          "test_documents": 354,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Economy",
+          "test_documents": 1023,
+          "affected_documents": 2,
+          "affected_percentage": 0.19550342130987292,
+          "conflicting_affected_documents": 1
+        },
+        {
+          "value": "Education",
+          "test_documents": 160,
+          "affected_documents": 10,
+          "affected_percentage": 6.25,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Employment",
+          "test_documents": 83,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Entertainment",
+          "test_documents": 980,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Health",
+          "test_documents": 410,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Lifestyle",
+          "test_documents": 167,
+          "affected_documents": 10,
+          "affected_percentage": 5.9880239520958085,
+          "conflicting_affected_documents": 1
+        },
+        {
+          "value": "Literature",
+          "test_documents": 180,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Market",
+          "test_documents": 189,
+          "affected_documents": 1,
+          "affected_percentage": 0.5291005291005291,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Opinion",
+          "test_documents": 171,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Politics",
+          "test_documents": 1342,
+          "affected_documents": 1,
+          "affected_percentage": 0.07451564828614009,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Society",
+          "test_documents": 1202,
+          "affected_documents": 4,
+          "affected_percentage": 0.33277870216306155,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Sports",
+          "test_documents": 1055,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Technology",
+          "test_documents": 278,
+          "affected_documents": 1,
+          "affected_percentage": 0.3597122302158274,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Tourism",
+          "test_documents": 137,
+          "affected_documents": 1,
+          "affected_percentage": 0.7299270072992701,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "World",
+          "test_documents": 754,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        }
+      ]
+    },
+    "B": {
+      "condition": "B",
+      "test_rows": 10000,
+      "affected_test_documents": 33,
+      "affected_test_percentage": 0.33,
+      "same_label_test_documents": 30,
+      "same_label_percentage_of_affected": 90.9090909090909,
+      "conflicting_label_test_documents": 3,
+      "conflicting_label_percentage_of_affected": 9.090909090909092,
+      "affected_by_source": {
+        "Aarthiknews": 7,
+        "Educationpati": 3,
+        "Ekantipur": 1,
+        "Gorkhapatra": 1,
+        "Nagarik": 6,
+        "Nepalipatra": 5,
+        "Nepalkhabar": 1,
+        "Onlinekhabar": 9
+      },
+      "affected_by_category": {
+        "Arts": 3,
+        "Bank": 8,
+        "Business": 1,
+        "Education": 5,
+        "Entertainment": 1,
+        "Health": 3,
+        "Lifestyle": 5,
+        "Market": 3,
+        "Politics": 2,
+        "Society": 1,
+        "World": 1
+      },
+      "same_label_by_source": {
+        "Aarthiknews": 5,
+        "Educationpati": 3,
+        "Ekantipur": 1,
+        "Gorkhapatra": 1,
+        "Nagarik": 6,
+        "Nepalipatra": 5,
+        "Nepalkhabar": 1,
+        "Onlinekhabar": 8
+      },
+      "conflict_by_source": {
+        "Aarthiknews": 2,
+        "Onlinekhabar": 1
+      },
+      "groups_with_test_and_train": 33,
+      "groups_with_label_conflict": 3,
+      "prediction_correctness": {
+        "xlmr": {
+          "affected_rows": 33,
+          "affected_accuracy": 0.7878787878787878,
+          "unaffected_rows": 9967,
+          "unaffected_accuracy": 0.822112972810274
+        }
+      },
+      "by_source": [
+        {
+          "value": "Aarthiknews",
+          "test_documents": 1126,
+          "affected_documents": 7,
+          "affected_percentage": 0.6216696269982238,
+          "conflicting_affected_documents": 2
+        },
+        {
+          "value": "Crimenews",
+          "test_documents": 173,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Educationpati",
+          "test_documents": 55,
+          "affected_documents": 3,
+          "affected_percentage": 5.454545454545454,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Ekantipur",
+          "test_documents": 1283,
+          "affected_documents": 1,
+          "affected_percentage": 0.0779423226812159,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Gorkhapatra",
+          "test_documents": 230,
+          "affected_documents": 1,
+          "affected_percentage": 0.43478260869565216,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Nagarik",
+          "test_documents": 482,
+          "affected_documents": 6,
+          "affected_percentage": 1.2448132780082988,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Nepalipatra",
+          "test_documents": 75,
+          "affected_documents": 5,
+          "affected_percentage": 6.666666666666667,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Nepalkhabar",
+          "test_documents": 3015,
+          "affected_documents": 1,
+          "affected_percentage": 0.03316749585406302,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Onlinekhabar",
+          "test_documents": 2905,
+          "affected_documents": 9,
+          "affected_percentage": 0.3098106712564544,
+          "conflicting_affected_documents": 1
+        },
+        {
+          "value": "Setopati",
+          "test_documents": 656,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        }
+      ],
+      "by_category": [
+        {
+          "value": "Arts",
+          "test_documents": 334,
+          "affected_documents": 3,
+          "affected_percentage": 0.8982035928143712,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Automobile",
+          "test_documents": 223,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Bank",
+          "test_documents": 455,
+          "affected_documents": 8,
+          "affected_percentage": 1.7582417582417582,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Business",
+          "test_documents": 504,
+          "affected_documents": 1,
+          "affected_percentage": 0.1984126984126984,
+          "conflicting_affected_documents": 1
+        },
+        {
+          "value": "Crime",
+          "test_documents": 353,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Economy",
+          "test_documents": 1023,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Education",
+          "test_documents": 160,
+          "affected_documents": 5,
+          "affected_percentage": 3.125,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Employment",
+          "test_documents": 83,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Entertainment",
+          "test_documents": 980,
+          "affected_documents": 1,
+          "affected_percentage": 0.10204081632653061,
+          "conflicting_affected_documents": 1
+        },
+        {
+          "value": "Health",
+          "test_documents": 410,
+          "affected_documents": 3,
+          "affected_percentage": 0.7317073170731708,
+          "conflicting_affected_documents": 1
+        },
+        {
+          "value": "Lifestyle",
+          "test_documents": 167,
+          "affected_documents": 5,
+          "affected_percentage": 2.9940119760479043,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Literature",
+          "test_documents": 180,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Market",
+          "test_documents": 189,
+          "affected_documents": 3,
+          "affected_percentage": 1.5873015873015872,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Opinion",
+          "test_documents": 171,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Politics",
+          "test_documents": 1342,
+          "affected_documents": 2,
+          "affected_percentage": 0.14903129657228018,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Society",
+          "test_documents": 1202,
+          "affected_documents": 1,
+          "affected_percentage": 0.08319467554076539,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Sports",
+          "test_documents": 1055,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Technology",
+          "test_documents": 278,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "Tourism",
+          "test_documents": 137,
+          "affected_documents": 0,
+          "affected_percentage": 0.0,
+          "conflicting_affected_documents": 0
+        },
+        {
+          "value": "World",
+          "test_documents": 754,
+          "affected_documents": 1,
+          "affected_percentage": 0.1326259946949602,
+          "conflicting_affected_documents": 0
+        }
+      ]
+    }
+  },
+  "interpretation_note": "Affected means a test document belongs to a verified Jaccard>=0.8 group containing at least one training document in the same condition. A and B manifests overlap, so condition results are reported separately and are not additive."
+}

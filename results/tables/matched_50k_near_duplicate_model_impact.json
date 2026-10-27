@@ -1,0 +1,1132 @@
+{
+  "diagnostics": [
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "all",
+      "rows": 10000,
+      "accuracy": 0.764,
+      "macro_f1": 0.7207955571404354
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected",
+      "rows": 42,
+      "accuracy": 0.9285714285714286,
+      "macro_f1": 0.7595029239766081
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "unaffected",
+      "rows": 9958,
+      "accuracy": 0.7633058847158064,
+      "macro_f1": 0.7191440726082046
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_same_label",
+      "rows": 39,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_conflict",
+      "rows": 3,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_source=Aarthiknews",
+      "rows": 3,
+      "accuracy": 0.6666666666666666,
+      "macro_f1": 0.5555555555555555
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_source=Educationpati",
+      "rows": 9,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_source=Nagarik",
+      "rows": 2,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_source=Nepalipatra",
+      "rows": 11,
+      "accuracy": 0.9090909090909091,
+      "macro_f1": 0.6491228070175438
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_source=Nepalkhabar",
+      "rows": 4,
+      "accuracy": 0.75,
+      "macro_f1": 0.3333333333333333
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_source=Onlinekhabar",
+      "rows": 11,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_source=Setopati",
+      "rows": 2,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_true_category=Automobile",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_true_category=Bank",
+      "rows": 10,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_true_category=Business",
+      "rows": 1,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_true_category=Economy",
+      "rows": 2,
+      "accuracy": 0.5,
+      "macro_f1": 0.3333333333333333
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_true_category=Education",
+      "rows": 10,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_true_category=Lifestyle",
+      "rows": 10,
+      "accuracy": 0.9,
+      "macro_f1": 0.47368421052631576
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_true_category=Market",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_true_category=Politics",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_true_category=Society",
+      "rows": 4,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_true_category=Technology",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "tfidf",
+      "subset": "affected_true_category=Tourism",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "all",
+      "rows": 10000,
+      "accuracy": 0.6985,
+      "macro_f1": 0.6046247837881567
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected",
+      "rows": 42,
+      "accuracy": 0.6666666666666666,
+      "macro_f1": 0.6324786324786325
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "unaffected",
+      "rows": 9958,
+      "accuracy": 0.6986342639084153,
+      "macro_f1": 0.6037893405187553
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_same_label",
+      "rows": 39,
+      "accuracy": 0.6923076923076923,
+      "macro_f1": 0.648962148962149
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_conflict",
+      "rows": 3,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.2
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_source=Aarthiknews",
+      "rows": 3,
+      "accuracy": 0.6666666666666666,
+      "macro_f1": 0.5
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_source=Educationpati",
+      "rows": 9,
+      "accuracy": 0.7777777777777778,
+      "macro_f1": 0.4375
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_source=Nagarik",
+      "rows": 2,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_source=Nepalipatra",
+      "rows": 11,
+      "accuracy": 0.5454545454545454,
+      "macro_f1": 0.5555555555555555
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_source=Nepalkhabar",
+      "rows": 4,
+      "accuracy": 0.75,
+      "macro_f1": 0.7333333333333334
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_source=Onlinekhabar",
+      "rows": 11,
+      "accuracy": 0.5454545454545454,
+      "macro_f1": 0.27777777777777773
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_source=Setopati",
+      "rows": 2,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_true_category=Automobile",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_true_category=Bank",
+      "rows": 10,
+      "accuracy": 0.5,
+      "macro_f1": 0.13333333333333333
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_true_category=Business",
+      "rows": 1,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_true_category=Economy",
+      "rows": 2,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_true_category=Education",
+      "rows": 10,
+      "accuracy": 0.8,
+      "macro_f1": 0.4444444444444444
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_true_category=Lifestyle",
+      "rows": 10,
+      "accuracy": 0.5,
+      "macro_f1": 0.3333333333333333
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_true_category=Market",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_true_category=Politics",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_true_category=Society",
+      "rows": 4,
+      "accuracy": 0.75,
+      "macro_f1": 0.42857142857142855
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_true_category=Technology",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "minilm",
+      "subset": "affected_true_category=Tourism",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "all",
+      "rows": 10000,
+      "accuracy": 0.8364,
+      "macro_f1": 0.7920752078738716
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected",
+      "rows": 42,
+      "accuracy": 0.7857142857142857,
+      "macro_f1": 0.6702075702075702
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "unaffected",
+      "rows": 9958,
+      "accuracy": 0.8366137778670416,
+      "macro_f1": 0.7918936605014232
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_same_label",
+      "rows": 39,
+      "accuracy": 0.7948717948717948,
+      "macro_f1": 0.6251526251526252
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_conflict",
+      "rows": 3,
+      "accuracy": 0.6666666666666666,
+      "macro_f1": 0.5
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_source=Aarthiknews",
+      "rows": 3,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_source=Educationpati",
+      "rows": 9,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_source=Nagarik",
+      "rows": 2,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_source=Nepalipatra",
+      "rows": 11,
+      "accuracy": 0.5454545454545454,
+      "macro_f1": 0.5555555555555555
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_source=Nepalkhabar",
+      "rows": 4,
+      "accuracy": 0.75,
+      "macro_f1": 0.7333333333333334
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_source=Onlinekhabar",
+      "rows": 11,
+      "accuracy": 0.7272727272727273,
+      "macro_f1": 0.2222222222222222
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_source=Setopati",
+      "rows": 2,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_true_category=Automobile",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_true_category=Bank",
+      "rows": 10,
+      "accuracy": 0.8,
+      "macro_f1": 0.4444444444444444
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_true_category=Business",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_true_category=Economy",
+      "rows": 2,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_true_category=Education",
+      "rows": 10,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_true_category=Lifestyle",
+      "rows": 10,
+      "accuracy": 0.5,
+      "macro_f1": 0.3333333333333333
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_true_category=Market",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_true_category=Politics",
+      "rows": 1,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_true_category=Society",
+      "rows": 4,
+      "accuracy": 0.75,
+      "macro_f1": 0.42857142857142855
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_true_category=Technology",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "A",
+      "model": "xlmr",
+      "subset": "affected_true_category=Tourism",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "all",
+      "rows": 10000,
+      "accuracy": 0.759,
+      "macro_f1": 0.7233753824120362
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected",
+      "rows": 33,
+      "accuracy": 0.9090909090909091,
+      "macro_f1": 0.7415584415584415
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "unaffected",
+      "rows": 9967,
+      "accuracy": 0.7585030600983245,
+      "macro_f1": 0.7220261185385811
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_same_label",
+      "rows": 30,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_conflict",
+      "rows": 3,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_source=Aarthiknews",
+      "rows": 7,
+      "accuracy": 0.7142857142857143,
+      "macro_f1": 0.4
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_source=Educationpati",
+      "rows": 3,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_source=Ekantipur",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_source=Gorkhapatra",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_source=Nagarik",
+      "rows": 6,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_source=Nepalipatra",
+      "rows": 5,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_source=Nepalkhabar",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_source=Onlinekhabar",
+      "rows": 9,
+      "accuracy": 0.8888888888888888,
+      "macro_f1": 0.6
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_true_category=Arts",
+      "rows": 3,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_true_category=Bank",
+      "rows": 8,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_true_category=Business",
+      "rows": 1,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_true_category=Education",
+      "rows": 5,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_true_category=Entertainment",
+      "rows": 1,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_true_category=Health",
+      "rows": 3,
+      "accuracy": 0.6666666666666666,
+      "macro_f1": 0.4
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_true_category=Lifestyle",
+      "rows": 5,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_true_category=Market",
+      "rows": 3,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_true_category=Politics",
+      "rows": 2,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_true_category=Society",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "tfidf",
+      "subset": "affected_true_category=World",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "all",
+      "rows": 10000,
+      "accuracy": 0.6982,
+      "macro_f1": 0.6120422739403869
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected",
+      "rows": 33,
+      "accuracy": 0.7272727272727273,
+      "macro_f1": 0.5677015250544662
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "unaffected",
+      "rows": 9967,
+      "accuracy": 0.6981037423497541,
+      "macro_f1": 0.6113695948306519
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_same_label",
+      "rows": 30,
+      "accuracy": 0.7666666666666667,
+      "macro_f1": 0.5708259061200237
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_conflict",
+      "rows": 3,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.25
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_source=Aarthiknews",
+      "rows": 7,
+      "accuracy": 0.42857142857142855,
+      "macro_f1": 0.2333333333333333
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_source=Educationpati",
+      "rows": 3,
+      "accuracy": 0.6666666666666666,
+      "macro_f1": 0.4
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_source=Ekantipur",
+      "rows": 1,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_source=Gorkhapatra",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_source=Nagarik",
+      "rows": 6,
+      "accuracy": 0.8333333333333334,
+      "macro_f1": 0.7
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_source=Nepalipatra",
+      "rows": 5,
+      "accuracy": 0.8,
+      "macro_f1": 0.4444444444444444
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_source=Nepalkhabar",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_source=Onlinekhabar",
+      "rows": 9,
+      "accuracy": 0.8888888888888888,
+      "macro_f1": 0.7818181818181819
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_true_category=Arts",
+      "rows": 3,
+      "accuracy": 0.6666666666666666,
+      "macro_f1": 0.4
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_true_category=Bank",
+      "rows": 8,
+      "accuracy": 0.875,
+      "macro_f1": 0.4666666666666667
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_true_category=Business",
+      "rows": 1,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_true_category=Education",
+      "rows": 5,
+      "accuracy": 0.8,
+      "macro_f1": 0.4444444444444444
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_true_category=Entertainment",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_true_category=Health",
+      "rows": 3,
+      "accuracy": 0.6666666666666666,
+      "macro_f1": 0.4
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_true_category=Lifestyle",
+      "rows": 5,
+      "accuracy": 0.8,
+      "macro_f1": 0.4444444444444444
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_true_category=Market",
+      "rows": 3,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.25
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_true_category=Politics",
+      "rows": 2,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_true_category=Society",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "minilm",
+      "subset": "affected_true_category=World",
+      "rows": 1,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "all",
+      "rows": 10000,
+      "accuracy": 0.822,
+      "macro_f1": 0.7781987032120975
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected",
+      "rows": 33,
+      "accuracy": 0.7878787878787878,
+      "macro_f1": 0.586547439488616
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "unaffected",
+      "rows": 9967,
+      "accuracy": 0.822112972810274,
+      "macro_f1": 0.7782234393151348
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_same_label",
+      "rows": 30,
+      "accuracy": 0.8,
+      "macro_f1": 0.5970885323826501
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_conflict",
+      "rows": 3,
+      "accuracy": 0.6666666666666666,
+      "macro_f1": 0.5
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_source=Aarthiknews",
+      "rows": 7,
+      "accuracy": 0.5714285714285714,
+      "macro_f1": 0.4333333333333333
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_source=Educationpati",
+      "rows": 3,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_source=Ekantipur",
+      "rows": 1,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_source=Gorkhapatra",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_source=Nagarik",
+      "rows": 6,
+      "accuracy": 0.8333333333333334,
+      "macro_f1": 0.7777777777777777
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_source=Nepalipatra",
+      "rows": 5,
+      "accuracy": 0.8,
+      "macro_f1": 0.4444444444444444
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_source=Nepalkhabar",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_source=Onlinekhabar",
+      "rows": 9,
+      "accuracy": 0.8888888888888888,
+      "macro_f1": 0.7818181818181819
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_true_category=Arts",
+      "rows": 3,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_true_category=Bank",
+      "rows": 8,
+      "accuracy": 0.875,
+      "macro_f1": 0.4666666666666667
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_true_category=Business",
+      "rows": 1,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_true_category=Education",
+      "rows": 5,
+      "accuracy": 0.8,
+      "macro_f1": 0.4444444444444444
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_true_category=Entertainment",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_true_category=Health",
+      "rows": 3,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_true_category=Lifestyle",
+      "rows": 5,
+      "accuracy": 0.8,
+      "macro_f1": 0.4444444444444444
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_true_category=Market",
+      "rows": 3,
+      "accuracy": 0.3333333333333333,
+      "macro_f1": 0.25
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_true_category=Politics",
+      "rows": 2,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_true_category=Society",
+      "rows": 1,
+      "accuracy": 1.0,
+      "macro_f1": 1.0
+    },
+    {
+      "condition": "B",
+      "model": "xlmr",
+      "subset": "affected_true_category=World",
+      "rows": 1,
+      "accuracy": 0.0,
+      "macro_f1": 0.0
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "algorithm": "SHA-256",
+  "files": {
+    "matched_50k_c_manifests\\Aarthiknews_test.parquet": "1fe0ecba3bd4a1b95c008c1f6571b0209453a6691f48df72d799f319be13f55e",
+    "matched_50k_c_manifests\\Aarthiknews_train.parquet": "1fb6b4e0260d74ca86fe9c4e02f64077cac49ddee0572de5be53d376e12193a2",
+    "matched_50k_c_manifests\\Aarthiknews_validation.parquet": "df3ea8fd346b186908281495bc0cf1a70d61f6abd03dc875d1e8002f3d151a83",
+    "matched_50k_c_manifests\\Ekantipur_test.parquet": "34e5c3e550ec5ebbf58484c0a48070e0840925e11be0c00ba28d4cc892a404b0",
+    "matched_50k_c_manifests\\Ekantipur_train.parquet": "b00e8b14dc387fad64c778db0daff634de1b6a7829f22d83635f021146a0b44f",
+    "matched_50k_c_manifests\\Ekantipur_validation.parquet": "40f19175d13c73e92ecaa229284b260ee3e3b620904dd85b72b102b57f6e4264",
+    "matched_50k_c_manifests\\Gorkhapatra_test.parquet": "ee4f41f6d3403d329f6592b4f2c9784d5ef855932375fc00566715dd44d199a6",
+    "matched_50k_c_manifests\\Gorkhapatra_train.parquet": "296f2a02f9a0f285e52b3efb2d53191fe3f5ab485b161dcbc5c1cbd2b499c9fb",
+    "matched_50k_c_manifests\\Gorkhapatra_validation.parquet": "c49da239d161ee30c41d519dc4d5f1e623d07756fbb803c157b64afb1b03da23",
+    "matched_50k_c_manifests\\Nagarik_test.parquet": "15514c5e4d6d0471d6071556211aafde3591cb7626abf402078418e80f3288e7",
+    "matched_50k_c_manifests\\Nagarik_train.parquet": "5f2d87d3a84d7f012780018e28f87a39956c18ecee056e8507dc155ad82ab3a1",
+    "matched_50k_c_manifests\\Nagarik_validation.parquet": "5dd9fe74acff9a47dc4fee8640aa69d3dc535a016b97b8fbe212a2518a5a141a",
+    "matched_50k_c_manifests\\Nepalkhabar_test.parquet": "a56285367dd6035024987422d70e3ecb9bf3f6f2f89694c1c46cff1ea932439c",
+    "matched_50k_c_manifests\\Nepalkhabar_train.parquet": "371f9797c46cad2af3a4ec870d9acfcbf1cbd7e8a9f4e86537e2b87f6563da5b",
+    "matched_50k_c_manifests\\Nepalkhabar_validation.parquet": "b9a25018991ff6d6a87fbf256cb40ebb4a5b4035a3da3ee1167eca3d63207959",
+    "matched_50k_c_manifests\\Onlinekhabar_test.parquet": "94565ff909472da708df956cdb98b434bf625e241b94c1fe0c43fb68b7c6396c",
+    "matched_50k_c_manifests\\Onlinekhabar_train.parquet": "ee6a840888a018f7d7d82f160561070701558949b95cc17dbb79269781ecbe5b",
+    "matched_50k_c_manifests\\Onlinekhabar_validation.parquet": "41086c207633ac222b8e6462679fef827447590b874bb1588c36b5af8650ba0b",
+    "matched_50k_c_manifests\\Setopati_test.parquet": "5ef2721d7f6606fb8981ecbfe95d333d01c881b3a0d2dbfa596b15d381da27b9",
+    "matched_50k_c_manifests\\Setopati_train.parquet": "2f4befff53d7d4902c6d18cc7836524e104c101fdff0c9fb70645293185d9220",
+    "matched_50k_c_manifests\\Setopati_validation.parquet": "575b56c042d5b19a00498789bbf0cf4979472687ae127d4dc7d9fcd6455f8cd7",
+    "matched_50k_manifests\\A_test.parquet": "47e73a4c5227eeccabbc04d890c4ed749ecc7b4c63ead62d1b1c04fffe38bb64",
+    "matched_50k_manifests\\A_train.parquet": "35d3a2613c653aeec11e979ea93c8492bfc866efd0e1231eca1f5a4220402aac",
+    "matched_50k_manifests\\A_validation.parquet": "b1400e437790ff7f162952e80d0b910a54a4d557e3acd1b8830c4ebf21121926",
+    "matched_50k_manifests\\B_test.parquet": "104d192884e497d031ca9c90b7905e7cd3c63a8e374bc29994c9a92eae65a058",
+    "matched_50k_manifests\\B_train.parquet": "09cfd207c2392ff6f7680dc729752e3e65d7eb3c07a9a2c95f3fda6e39250824",
+    "matched_50k_manifests\\B_validation.parquet": "c9e5617ab53baa0c1d7978a8040aaf6bfbad2f8c323d86c8725d1e7b2668ba31"
+  }
+}

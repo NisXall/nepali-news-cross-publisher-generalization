@@ -1,0 +1,58 @@
+{
+  "A": {
+    "tfidf_prediction_path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched50k_tfidf_A_test_predictions.csv",
+    "minilm_prediction_path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched50k_minilm_A_test_predictions.csv",
+    "embedding_cache": {
+      "train": {
+        "cache": "hit",
+        "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_A_train_f107c3870cdd0132fcb5.npy",
+        "rows": 50000,
+        "dimension": 384,
+        "seconds": 0.11173489992506802
+      },
+      "validation": {
+        "cache": "hit",
+        "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_A_validation_53f00e131568e22d1ea8.npy",
+        "rows": 10000,
+        "dimension": 384,
+        "seconds": 0.03460170002654195
+      },
+      "test": {
+        "cache": "hit",
+        "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_A_test_523bb54ef1aed767fbdb.npy",
+        "rows": 10000,
+        "dimension": 384,
+        "seconds": 0.03402799996547401
+      }
+    },
+    "test_rows": 10000
+  },
+  "B": {
+    "tfidf_prediction_path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched50k_tfidf_B_test_predictions.csv",
+    "minilm_prediction_path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched50k_minilm_B_test_predictions.csv",
+    "embedding_cache": {
+      "train": {
+        "cache": "hit",
+        "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_B_train_d70cdda3f1ec0f358d0d.npy",
+        "rows": 50000,
+        "dimension": 384,
+        "seconds": 0.1226637999061495
+      },
+      "validation": {
+        "cache": "hit",
+        "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_B_validation_82352444e32daa488186.npy",
+        "rows": 10000,
+        "dimension": 384,
+        "seconds": 0.0316581001970917
+      },
+      "test": {
+        "cache": "hit",
+        "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_B_test_c53d45cd21462e06a572.npy",
+        "rows": 10000,
+        "dimension": 384,
+        "seconds": 0.03853669995442033
+      }
+    },
+    "test_rows": 10000
+  }
+}

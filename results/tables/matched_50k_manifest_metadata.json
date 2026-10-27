@@ -1,0 +1,120 @@
+{
+  "status": "COMPLETED",
+  "seed": 42,
+  "train_rows": 50000,
+  "evaluation_rows": 10000,
+  "conditions": {
+    "A": {
+      "paths": [
+        "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_manifests\\A_train.parquet",
+        "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_manifests\\A_validation.parquet",
+        "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_manifests\\A_test.parquet"
+      ],
+      "rows": [
+        50000,
+        10000,
+        10000
+      ],
+      "categories": [
+        20,
+        20,
+        20
+      ],
+      "sources": [
+        [
+          "Aarthiknews",
+          "Crimenews",
+          "Educationpati",
+          "Ekantipur",
+          "Gorkhapatra",
+          "Nagarik",
+          "Nepalipatra",
+          "Nepalkhabar",
+          "Onlinekhabar",
+          "Setopati"
+        ],
+        [
+          "Aarthiknews",
+          "Crimenews",
+          "Educationpati",
+          "Ekantipur",
+          "Gorkhapatra",
+          "Nagarik",
+          "Nepalipatra",
+          "Nepalkhabar",
+          "Onlinekhabar",
+          "Setopati"
+        ],
+        [
+          "Aarthiknews",
+          "Crimenews",
+          "Educationpati",
+          "Ekantipur",
+          "Gorkhapatra",
+          "Nagarik",
+          "Nepalipatra",
+          "Nepalkhabar",
+          "Onlinekhabar",
+          "Setopati"
+        ]
+      ]
+    },
+    "B": {
+      "paths": [
+        "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_manifests\\B_train.parquet",
+        "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_manifests\\B_validation.parquet",
+        "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_manifests\\B_test.parquet"
+      ],
+      "rows": [
+        50000,
+        10000,
+        10000
+      ],
+      "categories": [
+        20,
+        20,
+        20
+      ],
+      "sources": [
+        [
+          "Aarthiknews",
+          "Crimenews",
+          "Educationpati",
+          "Ekantipur",
+          "Gorkhapatra",
+          "Nagarik",
+          "Nepalipatra",
+          "Nepalkhabar",
+          "Onlinekhabar",
+          "Setopati"
+        ],
+        [
+          "Aarthiknews",
+          "Crimenews",
+          "Educationpati",
+          "Ekantipur",
+          "Gorkhapatra",
+          "Nagarik",
+          "Nepalipatra",
+          "Nepalkhabar",
+          "Onlinekhabar",
+          "Setopati"
+        ],
+        [
+          "Aarthiknews",
+          "Crimenews",
+          "Educationpati",
+          "Ekantipur",
+          "Gorkhapatra",
+          "Nagarik",
+          "Nepalipatra",
+          "Nepalkhabar",
+          "Onlinekhabar",
+          "Setopati"
+        ]
+      ]
+    }
+  },
+  "fixed_partitions_preserved": true,
+  "selection_note": "Manifests are created once and are the only rows used for the matched A/B comparison."
+}

@@ -1,0 +1,360 @@
+{
+  "metadata": {
+    "status": "COMPLETED",
+    "seed": 42,
+    "train_rows": 50000,
+    "evaluation_rows": 10000,
+    "conditions": {
+      "A": {
+        "paths": [
+          "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_manifests\\A_train.parquet",
+          "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_manifests\\A_validation.parquet",
+          "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_manifests\\A_test.parquet"
+        ],
+        "rows": [
+          50000,
+          10000,
+          10000
+        ],
+        "categories": [
+          20,
+          20,
+          20
+        ],
+        "sources": [
+          [
+            "Aarthiknews",
+            "Crimenews",
+            "Educationpati",
+            "Ekantipur",
+            "Gorkhapatra",
+            "Nagarik",
+            "Nepalipatra",
+            "Nepalkhabar",
+            "Onlinekhabar",
+            "Setopati"
+          ],
+          [
+            "Aarthiknews",
+            "Crimenews",
+            "Educationpati",
+            "Ekantipur",
+            "Gorkhapatra",
+            "Nagarik",
+            "Nepalipatra",
+            "Nepalkhabar",
+            "Onlinekhabar",
+            "Setopati"
+          ],
+          [
+            "Aarthiknews",
+            "Crimenews",
+            "Educationpati",
+            "Ekantipur",
+            "Gorkhapatra",
+            "Nagarik",
+            "Nepalipatra",
+            "Nepalkhabar",
+            "Onlinekhabar",
+            "Setopati"
+          ]
+        ]
+      },
+      "B": {
+        "paths": [
+          "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_manifests\\B_train.parquet",
+          "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_manifests\\B_validation.parquet",
+          "C:\\Tech\\projects\\nepali-nlp-study\\results\\tables\\matched_50k_manifests\\B_test.parquet"
+        ],
+        "rows": [
+          50000,
+          10000,
+          10000
+        ],
+        "categories": [
+          20,
+          20,
+          20
+        ],
+        "sources": [
+          [
+            "Aarthiknews",
+            "Crimenews",
+            "Educationpati",
+            "Ekantipur",
+            "Gorkhapatra",
+            "Nagarik",
+            "Nepalipatra",
+            "Nepalkhabar",
+            "Onlinekhabar",
+            "Setopati"
+          ],
+          [
+            "Aarthiknews",
+            "Crimenews",
+            "Educationpati",
+            "Ekantipur",
+            "Gorkhapatra",
+            "Nagarik",
+            "Nepalipatra",
+            "Nepalkhabar",
+            "Onlinekhabar",
+            "Setopati"
+          ],
+          [
+            "Aarthiknews",
+            "Crimenews",
+            "Educationpati",
+            "Ekantipur",
+            "Gorkhapatra",
+            "Nagarik",
+            "Nepalipatra",
+            "Nepalkhabar",
+            "Onlinekhabar",
+            "Setopati"
+          ]
+        ]
+      }
+    },
+    "fixed_partitions_preserved": true,
+    "selection_note": "Manifests are created once and are the only rows used for the matched A/B comparison."
+  },
+  "results": [
+    {
+      "condition": "A",
+      "model": "TF-IDF word bigram + LogisticRegression",
+      "train_rows": 50000,
+      "validation_rows": 10000,
+      "test_rows": 10000,
+      "validation_metrics": {
+        "accuracy": 0.7281,
+        "macro_f1": 0.6700541012572426,
+        "weighted_f1": 0.7206941572178969
+      },
+      "test_metrics": {
+        "accuracy": 0.734,
+        "macro_f1": 0.6758838970318002,
+        "weighted_f1": 0.7273269071557246
+      },
+      "n_features": 300000
+    },
+    {
+      "condition": "A",
+      "model": "TF-IDF word bigram + LinearSVC",
+      "train_rows": 50000,
+      "validation_rows": 10000,
+      "test_rows": 10000,
+      "validation_metrics": {
+        "accuracy": 0.7627,
+        "macro_f1": 0.7235570672804739,
+        "weighted_f1": 0.7571525266595662
+      },
+      "test_metrics": {
+        "accuracy": 0.764,
+        "macro_f1": 0.7207955571404354,
+        "weighted_f1": 0.7584612395200595
+      },
+      "n_features": 300000
+    },
+    {
+      "condition": "A",
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 + LogisticRegression",
+      "train_rows": 50000,
+      "validation_rows": 10000,
+      "test_rows": 10000,
+      "validation_metrics": {
+        "accuracy": 0.6858,
+        "macro_f1": 0.5947938706796454,
+        "weighted_f1": 0.6737779593032146
+      },
+      "test_metrics": {
+        "accuracy": 0.675,
+        "macro_f1": 0.5741559641426545,
+        "weighted_f1": 0.6630386872413705
+      },
+      "embedding_dimension": 384,
+      "cache": {
+        "train": {
+          "cache": "miss",
+          "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_A_train_f107c3870cdd0132fcb5.npy",
+          "rows": 50000,
+          "dimension": 384,
+          "seconds": 105.03285100008361
+        },
+        "validation": {
+          "cache": "miss",
+          "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_A_validation_53f00e131568e22d1ea8.npy",
+          "rows": 10000,
+          "dimension": 384,
+          "seconds": 22.82251129997894
+        },
+        "test": {
+          "cache": "miss",
+          "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_A_test_523bb54ef1aed767fbdb.npy",
+          "rows": 10000,
+          "dimension": 384,
+          "seconds": 22.592942400020547
+        }
+      }
+    },
+    {
+      "condition": "A",
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 + LinearSVC",
+      "train_rows": 50000,
+      "validation_rows": 10000,
+      "test_rows": 10000,
+      "validation_metrics": {
+        "accuracy": 0.704,
+        "macro_f1": 0.617901356974732,
+        "weighted_f1": 0.6886914727826785
+      },
+      "test_metrics": {
+        "accuracy": 0.6985,
+        "macro_f1": 0.6046247837881567,
+        "weighted_f1": 0.6837192759146408
+      },
+      "embedding_dimension": 384,
+      "cache": {
+        "train": {
+          "cache": "miss",
+          "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_A_train_f107c3870cdd0132fcb5.npy",
+          "rows": 50000,
+          "dimension": 384,
+          "seconds": 105.03285100008361
+        },
+        "validation": {
+          "cache": "miss",
+          "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_A_validation_53f00e131568e22d1ea8.npy",
+          "rows": 10000,
+          "dimension": 384,
+          "seconds": 22.82251129997894
+        },
+        "test": {
+          "cache": "miss",
+          "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_A_test_523bb54ef1aed767fbdb.npy",
+          "rows": 10000,
+          "dimension": 384,
+          "seconds": 22.592942400020547
+        }
+      }
+    },
+    {
+      "condition": "B",
+      "model": "TF-IDF word bigram + LogisticRegression",
+      "train_rows": 50000,
+      "validation_rows": 10000,
+      "test_rows": 10000,
+      "validation_metrics": {
+        "accuracy": 0.7326,
+        "macro_f1": 0.6779023275522099,
+        "weighted_f1": 0.7268813175603048
+      },
+      "test_metrics": {
+        "accuracy": 0.7257,
+        "macro_f1": 0.671705761208338,
+        "weighted_f1": 0.7186288944503585
+      },
+      "n_features": 300000
+    },
+    {
+      "condition": "B",
+      "model": "TF-IDF word bigram + LinearSVC",
+      "train_rows": 50000,
+      "validation_rows": 10000,
+      "test_rows": 10000,
+      "validation_metrics": {
+        "accuracy": 0.762,
+        "macro_f1": 0.7225446120471137,
+        "weighted_f1": 0.757709628961978
+      },
+      "test_metrics": {
+        "accuracy": 0.759,
+        "macro_f1": 0.7233753824120362,
+        "weighted_f1": 0.7536797282556261
+      },
+      "n_features": 300000
+    },
+    {
+      "condition": "B",
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 + LogisticRegression",
+      "train_rows": 50000,
+      "validation_rows": 10000,
+      "test_rows": 10000,
+      "validation_metrics": {
+        "accuracy": 0.6788,
+        "macro_f1": 0.5834568280154518,
+        "weighted_f1": 0.666448339104262
+      },
+      "test_metrics": {
+        "accuracy": 0.6755,
+        "macro_f1": 0.5838863190482899,
+        "weighted_f1": 0.6639527994303083
+      },
+      "embedding_dimension": 384,
+      "cache": {
+        "train": {
+          "cache": "miss",
+          "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_B_train_d70cdda3f1ec0f358d0d.npy",
+          "rows": 50000,
+          "dimension": 384,
+          "seconds": 99.56688369996846
+        },
+        "validation": {
+          "cache": "miss",
+          "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_B_validation_82352444e32daa488186.npy",
+          "rows": 10000,
+          "dimension": 384,
+          "seconds": 19.827318100025877
+        },
+        "test": {
+          "cache": "miss",
+          "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_B_test_c53d45cd21462e06a572.npy",
+          "rows": 10000,
+          "dimension": 384,
+          "seconds": 19.792017200030386
+        }
+      }
+    },
+    {
+      "condition": "B",
+      "model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2 + LinearSVC",
+      "train_rows": 50000,
+      "validation_rows": 10000,
+      "test_rows": 10000,
+      "validation_metrics": {
+        "accuracy": 0.6971,
+        "macro_f1": 0.6081268050017367,
+        "weighted_f1": 0.6823223347694325
+      },
+      "test_metrics": {
+        "accuracy": 0.6982,
+        "macro_f1": 0.6120422739403869,
+        "weighted_f1": 0.6837818549256297
+      },
+      "embedding_dimension": 384,
+      "cache": {
+        "train": {
+          "cache": "miss",
+          "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_B_train_d70cdda3f1ec0f358d0d.npy",
+          "rows": 50000,
+          "dimension": 384,
+          "seconds": 99.56688369996846
+        },
+        "validation": {
+          "cache": "miss",
+          "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_B_validation_82352444e32daa488186.npy",
+          "rows": 10000,
+          "dimension": 384,
+          "seconds": 19.827318100025877
+        },
+        "test": {
+          "cache": "miss",
+          "path": "C:\\Tech\\projects\\nepali-nlp-study\\results\\cache\\embeddings_matched_B_test_c53d45cd21462e06a572.npy",
+          "rows": 10000,
+          "dimension": 384,
+          "seconds": 19.792017200030386
+        }
+      }
+    }
+  ]
+}

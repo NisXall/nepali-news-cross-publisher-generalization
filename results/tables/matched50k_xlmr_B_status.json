@@ -1,0 +1,78 @@
+{
+  "condition": "B",
+  "description": "fixed duplicate-aware matched 50k manifest",
+  "matched_budget": true,
+  "near_duplicate_audit_status": "BLOCKED",
+  "status": "COMPLETED",
+  "model": "xlm-roberta-base",
+  "model_revision": "local cached revision; exact commit unavailable",
+  "text_field": "content",
+  "preprocessing_version": "content-v1",
+  "label_names": [
+    "Arts",
+    "Automobile",
+    "Bank",
+    "Business",
+    "Crime",
+    "Economy",
+    "Education",
+    "Employment",
+    "Entertainment",
+    "Health",
+    "Lifestyle",
+    "Literature",
+    "Market",
+    "Opinion",
+    "Politics",
+    "Society",
+    "Sports",
+    "Technology",
+    "Tourism",
+    "World"
+  ],
+  "seed": 42,
+  "train_rows": 50000,
+  "validation_rows": 10000,
+  "test_rows": 10000,
+  "evaluation_limit": null,
+  "train_categories": 20,
+  "validation_categories": 20,
+  "test_categories": 20,
+  "max_length": 256,
+  "learning_rate": 2e-05,
+  "epochs": 1,
+  "batch_size": 4,
+  "gradient_accumulation": 4,
+  "effective_batch_size": 16,
+  "mixed_precision": "bf16",
+  "device": "cuda",
+  "cuda_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "package_versions": {
+    "transformers": "5.20.2",
+    "torch": "2.13.0+cu130"
+  },
+  "mean_training_loss": 0.8109486160278321,
+  "validation_history": [
+    {
+      "epoch": 1,
+      "accuracy": 0.8288,
+      "macro_f1": 0.7882968511574793,
+      "weighted_f1": 0.8269979500115676
+    }
+  ],
+  "best_epoch": 1,
+  "validation_metrics": {
+    "accuracy": 0.8288,
+    "macro_f1": 0.7882968511574793,
+    "weighted_f1": 0.8269979500115676
+  },
+  "test_metrics": {
+    "accuracy": 0.822,
+    "macro_f1": 0.7781987032120975,
+    "weighted_f1": 0.8203697757467647
+  },
+  "checkpoint": "C:\\Tech\\projects\\nepali-nlp-study\\results\\checkpoints\\matched50k_xlmr_B\\best",
+  "runtime_seconds": 2190.6279116000514,
+  "protocol_note": "Repository has exact normalized duplicate grouping but no implemented Jaccard-0.8 MinHash/LSH near-duplicate safeguard; no such safeguard is claimed here.",
+  "warning": "This is a full condition result; test labels were not used for checkpoint selection."
+}

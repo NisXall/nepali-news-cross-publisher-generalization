@@ -35,3 +35,6 @@ Thumbs.db
 
 # Local explanatory study guides; generated for personal learning
 /explanations/
+
+# Personal paper-writing pack
+/notes/paper_pack.md

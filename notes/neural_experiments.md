@@ -245,6 +245,49 @@ TF-IDF LinearSVC and multilingual
 embedding caches reused. The consolidated A/B/C table is
 `results/tables/matched_50k_abc_consolidated.csv`.
 
+### Per-class metrics and uncertainty
+
+Block 2 generated per-class precision, recall, F1, and support for every
+available matched test prediction set in
+`results/tables/matched_50k_per_class_metrics.csv`. It also generated
+2,000-resample independent document-bootstrap percentile intervals for
+accuracy and macro-F1 in
+`results/tables/matched_50k_independent_bootstrap.json`. A and B use different
+test rows, so these intervals must not be used as paired A/B intervals.
+Document-level bootstrap uncertainty is conditional on each fixed test set and
+does not quantify variation across publishers.
+
+The available prediction sets are matched A/B TF-IDF, MiniLM, and XLM-R, plus
+all seven matched C XLM-R folds. Matched C TF-IDF and MiniLM per-document
+predictions were not available and were not reconstructed from aggregate
+metrics; this coverage boundary is recorded in
+`results/tables/matched_50k_analysis_coverage.json`.
+
+### Degradation, error, and prior-distribution diagnostics
+
+Block 3 saved A/B degradation deltas for every model family in
+`results/tables/matched_50k_ab_degradation.csv`. Under the matched 50k,
+one-epoch, one-seed budget, XLM-R macro-F1 changed by -0.0139 from A to B,
+whereas TF-IDF LinearSVC changed by +0.0026 and MiniLM LinearSVC by +0.0074.
+These are descriptive differences between different test samples, not paired
+or significance-tested effects.
+
+Source-level metrics for the available prediction sets are in
+`results/tables/matched_50k_source_degradation.csv`. Error examples, limited
+to up to 50 misclassified rows from the lowest-macro-F1 source for each
+prediction set, are in `results/tables/matched_50k_error_samples.csv`.
+Because the saved prediction files do not contain article text, these are
+identifier/category samples for later qualitative review rather than completed
+manual error analysis.
+
+Test-side category-prior reweighting was computed without retraining and is
+saved in `results/tables/matched_50k_test_prior_reweighting.json`. It matches
+each test set to the corresponding training category proportions using a
+weighted confusion matrix. The original unweighted test metrics remain the
+primary results; the reweighted values are a sensitivity diagnostic, and
+categories absent from a test set are reported rather than silently assigned
+zero support.
+
 ## Reproducible commands
 
 ```powershell

@@ -1,0 +1,484 @@
+condition,model,source,original_index,true_category,predicted_category
+A,TF-IDF LinearSVC,Nepalipatra,49453,Tourism,Politics
+A,TF-IDF LinearSVC,Nepalipatra,36505,Lifestyle,Society
+A,TF-IDF LinearSVC,Nepalipatra,49176,Tourism,Society
+A,TF-IDF LinearSVC,Nepalipatra,49052,Tourism,Economy
+A,TF-IDF LinearSVC,Nepalipatra,49480,Tourism,Bank
+A,TF-IDF LinearSVC,Nepalipatra,35887,Lifestyle,Arts
+A,TF-IDF LinearSVC,Nepalipatra,49213,Tourism,Economy
+A,TF-IDF LinearSVC,Nepalipatra,49412,Tourism,Economy
+A,TF-IDF LinearSVC,Nepalipatra,49060,Tourism,Society
+A,TF-IDF LinearSVC,Nepalipatra,49171,Tourism,Economy
+A,TF-IDF LinearSVC,Nepalipatra,49446,Tourism,Entertainment
+A,TF-IDF LinearSVC,Nepalipatra,36997,Lifestyle,Health
+A,TF-IDF LinearSVC,Nepalipatra,49054,Tourism,Society
+A,TF-IDF LinearSVC,Nepalipatra,49336,Tourism,Society
+A,TF-IDF LinearSVC,Nepalipatra,36681,Lifestyle,Health
+A,TF-IDF LinearSVC,Nepalipatra,35645,Lifestyle,Health
+A,TF-IDF LinearSVC,Nepalipatra,49186,Tourism,Politics
+A,TF-IDF LinearSVC,Nepalipatra,36824,Lifestyle,Health
+A,TF-IDF LinearSVC,Nepalipatra,36690,Lifestyle,Health
+A,TF-IDF LinearSVC,Nepalipatra,35940,Lifestyle,Health
+A,TF-IDF LinearSVC,Nepalipatra,49306,Tourism,Arts
+A,TF-IDF LinearSVC,Nepalipatra,35865,Lifestyle,Literature
+A,TF-IDF LinearSVC,Nepalipatra,35863,Lifestyle,Health
+A,TF-IDF LinearSVC,Nepalipatra,35693,Lifestyle,Society
+A,TF-IDF LinearSVC,Nepalipatra,49371,Tourism,Economy
+A,TF-IDF LinearSVC,Nepalipatra,49462,Tourism,Economy
+A,TF-IDF LinearSVC,Nepalipatra,49392,Tourism,Society
+A,TF-IDF LinearSVC,Nepalipatra,36147,Lifestyle,Health
+A,TF-IDF LinearSVC,Nepalipatra,49529,Tourism,Opinion
+A,TF-IDF LinearSVC,Nepalipatra,49329,Tourism,Society
+A,TF-IDF LinearSVC,Nepalipatra,36038,Lifestyle,Business
+A,TF-IDF LinearSVC,Nepalipatra,35810,Lifestyle,Economy
+A,TF-IDF LinearSVC,Nepalipatra,49312,Tourism,Society
+A,TF-IDF LinearSVC,Nepalipatra,49194,Tourism,Lifestyle
+B,TF-IDF LinearSVC,Nepalipatra,36913,Lifestyle,Health
+B,TF-IDF LinearSVC,Nepalipatra,35646,Lifestyle,Business
+B,TF-IDF LinearSVC,Nepalipatra,36127,Lifestyle,Business
+B,TF-IDF LinearSVC,Nepalipatra,36212,Lifestyle,Health
+B,TF-IDF LinearSVC,Nepalipatra,36866,Lifestyle,World
+B,TF-IDF LinearSVC,Nepalipatra,49077,Tourism,Society
+B,TF-IDF LinearSVC,Nepalipatra,49403,Tourism,Society
+B,TF-IDF LinearSVC,Nepalipatra,49317,Tourism,Economy
+B,TF-IDF LinearSVC,Nepalipatra,36690,Lifestyle,Health
+B,TF-IDF LinearSVC,Nepalipatra,35659,Lifestyle,Business
+B,TF-IDF LinearSVC,Nepalipatra,36611,Lifestyle,Health
+B,TF-IDF LinearSVC,Nepalipatra,36932,Lifestyle,Society
+B,TF-IDF LinearSVC,Nepalipatra,36940,Lifestyle,Health
+B,TF-IDF LinearSVC,Nepalipatra,35655,Lifestyle,Arts
+B,TF-IDF LinearSVC,Nepalipatra,36203,Lifestyle,Health
+B,TF-IDF LinearSVC,Nepalipatra,49542,Tourism,Lifestyle
+B,TF-IDF LinearSVC,Nepalipatra,36688,Lifestyle,Bank
+B,TF-IDF LinearSVC,Nepalipatra,36683,Lifestyle,Society
+B,TF-IDF LinearSVC,Nepalipatra,49560,Tourism,Entertainment
+B,TF-IDF LinearSVC,Nepalipatra,36944,Lifestyle,Health
+B,TF-IDF LinearSVC,Nepalipatra,36081,Lifestyle,Society
+B,TF-IDF LinearSVC,Nepalipatra,49270,Tourism,Business
+B,TF-IDF LinearSVC,Nepalipatra,49116,Tourism,Business
+B,TF-IDF LinearSVC,Nepalipatra,35929,Lifestyle,Business
+B,TF-IDF LinearSVC,Nepalipatra,35869,Lifestyle,Entertainment
+B,TF-IDF LinearSVC,Nepalipatra,37017,Lifestyle,Health
+B,TF-IDF LinearSVC,Nepalipatra,36844,Lifestyle,Health
+B,TF-IDF LinearSVC,Nepalipatra,49404,Tourism,Society
+B,TF-IDF LinearSVC,Nepalipatra,49190,Tourism,Crime
+B,TF-IDF LinearSVC,Nepalipatra,49130,Tourism,Bank
+B,TF-IDF LinearSVC,Nepalipatra,36354,Lifestyle,Health
+B,TF-IDF LinearSVC,Nepalipatra,35918,Lifestyle,Health
+A,MiniLM LinearSVC,Educationpati,64294,Education,Entertainment
+A,MiniLM LinearSVC,Educationpati,64442,Education,Technology
+A,MiniLM LinearSVC,Educationpati,63087,Education,Politics
+A,MiniLM LinearSVC,Educationpati,64273,Education,Society
+A,MiniLM LinearSVC,Educationpati,64289,Education,Health
+A,MiniLM LinearSVC,Educationpati,63166,Education,Business
+A,MiniLM LinearSVC,Educationpati,62995,Education,Opinion
+A,MiniLM LinearSVC,Educationpati,64065,Education,Society
+A,MiniLM LinearSVC,Educationpati,63783,Education,Sports
+A,MiniLM LinearSVC,Educationpati,63633,Education,Economy
+A,MiniLM LinearSVC,Educationpati,63345,Education,Health
+A,MiniLM LinearSVC,Educationpati,64448,Education,Society
+A,MiniLM LinearSVC,Educationpati,63013,Education,Politics
+A,MiniLM LinearSVC,Educationpati,63561,Education,World
+A,MiniLM LinearSVC,Educationpati,64325,Education,Technology
+A,MiniLM LinearSVC,Educationpati,63719,Education,Market
+A,MiniLM LinearSVC,Educationpati,63798,Education,Opinion
+A,MiniLM LinearSVC,Educationpati,63531,Education,Opinion
+A,MiniLM LinearSVC,Educationpati,63135,Education,Entertainment
+A,MiniLM LinearSVC,Educationpati,63068,Education,Economy
+A,MiniLM LinearSVC,Educationpati,64302,Education,World
+A,MiniLM LinearSVC,Educationpati,63175,Education,Entertainment
+A,MiniLM LinearSVC,Educationpati,64149,Education,Sports
+B,MiniLM LinearSVC,Educationpati,63439,Education,Entertainment
+B,MiniLM LinearSVC,Educationpati,63143,Education,Health
+B,MiniLM LinearSVC,Educationpati,63827,Education,Politics
+B,MiniLM LinearSVC,Educationpati,64154,Education,Politics
+B,MiniLM LinearSVC,Educationpati,63087,Education,Politics
+B,MiniLM LinearSVC,Educationpati,64448,Education,Society
+B,MiniLM LinearSVC,Educationpati,64193,Education,Crime
+B,MiniLM LinearSVC,Educationpati,63183,Education,Employment
+B,MiniLM LinearSVC,Educationpati,63114,Education,World
+B,MiniLM LinearSVC,Educationpati,63839,Education,Economy
+B,MiniLM LinearSVC,Educationpati,63628,Education,Business
+B,MiniLM LinearSVC,Educationpati,63205,Education,World
+B,MiniLM LinearSVC,Educationpati,64082,Education,Politics
+B,MiniLM LinearSVC,Educationpati,63739,Education,World
+A,XLM-RoBERTa-base,Educationpati,64065,Education,Society
+A,XLM-RoBERTa-base,Educationpati,63013,Education,Opinion
+A,XLM-RoBERTa-base,Educationpati,64325,Education,Technology
+A,XLM-RoBERTa-base,Educationpati,63798,Education,Economy
+A,XLM-RoBERTa-base,Educationpati,64302,Education,Economy
+A,XLM-RoBERTa-base,Educationpati,63175,Education,Health
+B,XLM-RoBERTa-base,Crimenews,29416,Crime,Bank
+B,XLM-RoBERTa-base,Crimenews,30796,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,32563,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,29459,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,30392,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,29504,Crime,Opinion
+B,XLM-RoBERTa-base,Crimenews,31136,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,32111,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,31955,Crime,World
+B,XLM-RoBERTa-base,Crimenews,32580,Crime,Health
+B,XLM-RoBERTa-base,Crimenews,31712,Crime,Education
+B,XLM-RoBERTa-base,Crimenews,33093,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,30141,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,31741,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,29769,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,32105,Crime,World
+B,XLM-RoBERTa-base,Crimenews,30302,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,31331,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,29674,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,29663,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,30089,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,29888,Crime,World
+B,XLM-RoBERTa-base,Crimenews,29954,Crime,Society
+B,XLM-RoBERTa-base,Crimenews,32013,Crime,Society
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118141,Bank,Employment
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118142,Bank,Employment
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118162,Bank,Employment
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118195,Bank,Opinion
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118196,Bank,Employment
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118199,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118208,Bank,Crime
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118235,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118253,Bank,Crime
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118292,Bank,Market
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118294,Bank,Crime
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118320,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118334,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118376,Bank,Crime
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118391,Bank,Politics
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118393,Bank,Tourism
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118413,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118419,Bank,Crime
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118426,Bank,Opinion
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118450,Bank,Crime
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118471,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118478,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118501,Bank,Tourism
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118508,Bank,Health
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118511,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118537,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118543,Bank,Market
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118557,Bank,Education
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118570,Bank,Crime
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118579,Bank,Tourism
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118580,Bank,Crime
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118581,Bank,Crime
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118585,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118605,Bank,Crime
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118613,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118631,Bank,Market
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118648,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118665,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118741,Bank,Market
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118787,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118808,Bank,Employment
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118818,Bank,Market
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118849,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118855,Bank,Crime
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118861,Bank,Opinion
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118864,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118873,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118896,Bank,Economy
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118923,Bank,Technology
+C_Aarthiknews,XLM-RoBERTa-base,Aarthiknews,118939,Bank,Market
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2168,World,Sports
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2173,World,Tourism
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2175,World,Business
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2180,World,Health
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2183,World,Health
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2186,World,Health
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2190,World,Technology
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2191,World,Education
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2201,World,Health
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2209,World,Entertainment
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2211,World,Literature
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2216,World,Business
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2219,World,Business
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2220,World,Technology
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2224,World,Business
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2231,World,Sports
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2252,World,Opinion
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2261,World,Entertainment
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2283,World,Employment
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2290,World,Tourism
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2301,World,Politics
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2302,World,Employment
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2306,World,Tourism
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2308,World,Opinion
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2310,World,Arts
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2312,World,Tourism
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2316,World,Health
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2331,World,Entertainment
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2345,World,Education
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2346,World,Employment
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2347,World,Tourism
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2350,World,Education
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2351,World,Entertainment
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2359,World,Health
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2362,World,Education
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2369,World,Technology
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2380,World,Tourism
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2382,World,Entertainment
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2383,World,Health
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2387,World,Health
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2390,World,Tourism
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2395,World,Health
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2396,World,Health
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2397,World,Health
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2400,World,Health
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2401,World,Opinion
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2402,World,Literature
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2403,World,Health
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2404,World,Economy
+C_Ekantipur,XLM-RoBERTa-base,Ekantipur,2405,World,Health
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,17,Education,Sports
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,29,Education,Literature
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,46,Education,Technology
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,56,Education,Opinion
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,66,Education,Politics
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,81,Education,Health
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,94,Education,Health
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,95,Education,Health
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,102,Education,Health
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,106,Education,Health
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,114,Education,World
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,127,Education,Health
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,129,Education,World
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,137,Education,Health
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,148,Education,World
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,169,Education,Crime
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,179,Education,Politics
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,192,Education,Politics
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,198,Education,World
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,202,Education,Opinion
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,207,Education,Technology
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,220,Education,World
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,238,Education,Literature
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,250,Education,Sports
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,251,Education,Health
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,252,Education,Crime
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,254,Education,Politics
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,264,Education,Literature
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,265,Education,Bank
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,267,Education,Bank
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,296,Education,Crime
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,303,Education,Opinion
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,309,Education,Crime
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,316,Education,Opinion
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,317,Education,Health
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,322,Education,World
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,324,Education,Politics
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,333,Education,Health
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,334,Education,Employment
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,341,Education,Literature
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,369,Education,Technology
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,375,Education,Technology
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,388,Education,Sports
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,405,Education,Technology
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,410,Education,Opinion
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,421,Education,Health
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,431,Education,Employment
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,464,Education,Crime
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,465,Education,Politics
+C_Gorkhapatra,XLM-RoBERTa-base,Gorkhapatra,490,Education,Sports
+C_Nagarik,XLM-RoBERTa-base,Nagarik,806,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,807,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,808,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,809,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,810,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,811,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,812,Education,Politics
+C_Nagarik,XLM-RoBERTa-base,Nagarik,813,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,814,Education,Economy
+C_Nagarik,XLM-RoBERTa-base,Nagarik,815,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,816,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,817,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,818,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,819,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,820,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,821,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,822,Education,Politics
+C_Nagarik,XLM-RoBERTa-base,Nagarik,823,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,824,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,825,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,826,Education,Economy
+C_Nagarik,XLM-RoBERTa-base,Nagarik,827,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,828,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,829,Education,Economy
+C_Nagarik,XLM-RoBERTa-base,Nagarik,830,Education,Economy
+C_Nagarik,XLM-RoBERTa-base,Nagarik,831,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,832,Education,Economy
+C_Nagarik,XLM-RoBERTa-base,Nagarik,833,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,834,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,835,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,836,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,837,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,838,Education,Economy
+C_Nagarik,XLM-RoBERTa-base,Nagarik,839,Education,Economy
+C_Nagarik,XLM-RoBERTa-base,Nagarik,840,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,841,Education,Economy
+C_Nagarik,XLM-RoBERTa-base,Nagarik,842,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,843,Education,Economy
+C_Nagarik,XLM-RoBERTa-base,Nagarik,844,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,845,Education,Economy
+C_Nagarik,XLM-RoBERTa-base,Nagarik,846,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,847,Education,Economy
+C_Nagarik,XLM-RoBERTa-base,Nagarik,848,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,849,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,850,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,851,Education,Economy
+C_Nagarik,XLM-RoBERTa-base,Nagarik,852,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,853,Education,Arts
+C_Nagarik,XLM-RoBERTa-base,Nagarik,854,Education,Society
+C_Nagarik,XLM-RoBERTa-base,Nagarik,855,Education,Economy
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20294,Society,Business
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20295,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20296,Society,Politics
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20298,Society,Education
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20299,Society,Politics
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20300,Society,Health
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20302,Society,Health
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20303,Society,Politics
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20305,Society,Employment
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20306,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20307,Society,Education
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20309,Society,Education
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20310,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20312,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20313,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20314,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20315,Society,Arts
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20316,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20317,Society,Education
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20320,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20321,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20322,Society,Health
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20332,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20333,Society,Arts
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20336,Society,Education
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20339,Society,Politics
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20340,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20341,Society,Automobile
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20342,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20343,Society,Health
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20344,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20349,Society,Arts
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20350,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20351,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20352,Society,Employment
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20353,Society,Health
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20356,Society,Arts
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20357,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20358,Society,Tourism
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20359,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20360,Society,Business
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20362,Society,Technology
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20363,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20364,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20365,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20366,Society,Politics
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20367,Society,Education
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20369,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20370,Society,Crime
+C_Nepalkhabar,XLM-RoBERTa-base,Nepalkhabar,20371,Society,Arts
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9197,World,Society
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9198,World,Society
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9199,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9200,World,Economy
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9201,World,Economy
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9202,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9203,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9204,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9205,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9206,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9207,World,Education
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9208,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9209,World,Education
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9210,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9212,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9213,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9214,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9215,World,Economy
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9216,World,Education
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9217,World,Tourism
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9218,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9219,World,Society
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9220,World,Entertainment
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9221,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9222,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9224,World,Technology
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9225,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9226,World,Economy
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9227,World,Economy
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9228,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9229,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9230,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9233,World,Economy
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9234,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9235,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9236,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9237,World,Economy
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9238,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9239,World,Society
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9242,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9244,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9246,World,Health
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9247,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9248,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9249,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9250,World,Economy
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9251,World,Business
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9252,World,Economy
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9253,World,Economy
+C_Onlinekhabar,XLM-RoBERTa-base,Onlinekhabar,9254,World,Health
+C_Setopati,XLM-RoBERTa-base,Setopati,115762,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115766,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115767,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115768,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115769,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115771,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115772,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115773,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115774,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115775,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115776,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115777,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115778,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115779,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115781,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115782,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115783,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115784,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115785,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115786,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115788,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115789,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115793,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115796,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115798,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115799,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115800,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115802,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115803,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115804,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115805,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115806,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115808,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115810,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115811,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115814,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115815,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115816,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115817,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115818,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115819,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115820,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115822,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115823,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115824,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115825,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115826,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115827,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115828,Technology,Economy
+C_Setopati,XLM-RoBERTa-base,Setopati,115829,Technology,Economy

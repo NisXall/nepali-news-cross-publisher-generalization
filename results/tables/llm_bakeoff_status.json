@@ -1,0 +1,158 @@
+{
+  "status": "LLM_STAGE_STOPPED_NO_MODEL_ABOVE_THRESHOLD",
+  "scope": "validation_only",
+  "test_articles_accessed": false,
+  "model_selected": "Qwen/Qwen2.5-3B-Instruct",
+  "time_cap_minutes": 60,
+  "elapsed_stage_minutes": 10,
+  "truncation": {
+    "article_tokens": 400,
+    "demonstration_tokens": 100,
+    "tokenizer_specific": true
+  },
+  "validation_manifests": [
+    "results/tables/llm_validation_400_ids.csv",
+    "results/tables/llm_validation_bakeoff_100_ids.csv"
+  ],
+  "candidates": {
+    "Qwen/Qwen2.5-3B-Instruct-AWQ": {
+      "revision": "3559b226e8ce77211e2c1bd7ddfb7686fec4d6dd",
+      "quantization": "AWQ 4-bit",
+      "license": "qwen-research",
+      "tokenizer_status": "downloaded",
+      "token_counts_on_50_training_articles": {
+        "median": 1886,
+        "p95": 4391,
+        "max": 6967
+      },
+      "runtime_status": "not_loaded",
+      "blocker": "Resumed download in the existing cache, but it stalled with incomplete weight files and no completion after repeated polling. No inference ran."
+    },
+    "google/gemma-3-4b-it": {
+      "revision": "093f9f388b31de276ce2de164bdc2081324b9767",
+      "quantization": "official 4-bit form not available from the gated repository",
+      "license": "gemma",
+      "tokenizer_status": "not_downloaded",
+      "runtime_status": "skipped",
+      "blocker": "Official Hugging Face access is gated and no account or license acceptance is permitted; no permitted ungated mirror was downloaded within the cap."
+    }
+  },
+  "proxy_token_counts": {
+    "tokenizer": "xlm-roberta-base",
+    "articles": 50,
+    "median": 451,
+    "p95": 820,
+    "max": 2060,
+    "note": "Planning proxy only; not a candidate-model measurement."
+  },
+  "inference": {
+    "qwen_zero_shot": {
+      "n": 100,
+      "accuracy": 0.19,
+      "macro_f1": 0.11407867494824017,
+      "weighted_f1": 0.18233954451345752,
+      "mean_seconds_per_article": 2.862332865999779,
+      "median_seconds_per_article": 2.796037950000027,
+      "p95_seconds_per_article": 3.001401600020472,
+      "total_seconds": 286.6379611000302,
+      "peak_vram_gib": 11.123046875,
+      "peak_allocated_gib": 4.951703071594238,
+      "majority_baseline_accuracy": 0.13,
+      "majority_label": "Economy",
+      "qwen_token_counts_50": {
+        "median": 1852.0,
+        "p95": 3240,
+        "max": 6967,
+        "n": 50
+      },
+      "article_truncation_tokens": 400,
+      "demo_truncation_tokens": 100,
+      "prompt_tokens_min": 219,
+      "prompt_tokens_max": 468
+    },
+    "gemma_zero_shot": null,
+    "few_shot_feasibility": {
+      "prompt_tokens": 2661,
+      "context_length": 32768,
+      "fits_context": true,
+      "seconds_without_prefix_cache": "unknown",
+      "seconds_with_prefix_cache": "unknown"
+    },
+    "throughput": 2.862332865999779,
+    "vram": 11.123046875,
+    "estimated_test_runtime_minutes": {
+      "7_publishers_x_150_x_2_conditions": 100.2,
+      "7_publishers_x_200_x_2_conditions": 133.6
+    }
+  },
+  "majority_baseline_accuracy": 0.13,
+  "decision": "LLM stage stopped: no tested model clearly above baseline",
+  "candidate_result": {
+    "n": 100,
+    "accuracy": 0.19,
+    "macro_f1": 0.11407867494824017,
+    "weighted_f1": 0.18233954451345752,
+    "mean_seconds_per_article": 2.862332865999779,
+    "median_seconds_per_article": 2.796037950000027,
+    "p95_seconds_per_article": 3.001401600020472,
+    "total_seconds": 286.6379611000302,
+    "peak_vram_gib": 11.123046875,
+    "peak_allocated_gib": 4.951703071594238,
+    "majority_baseline_accuracy": 0.13,
+    "majority_label": "Economy",
+    "qwen_token_counts_50": {
+      "median": 1852.0,
+      "p95": 3240,
+      "max": 6967,
+      "n": 50
+    },
+    "article_truncation_tokens": 400,
+    "demo_truncation_tokens": 100,
+    "prompt_tokens_min": 219,
+    "prompt_tokens_max": 468,
+    "few_shot_prompt_tokens_estimate": 2661,
+    "few_shot_context_fits_model_context": true,
+    "few_shot_vram_status": "Not run; zero-shot peak torch allocated 4.95 GiB, while torch reserved metric reported 11.12 GiB and requires caution on the 8 GiB GPU.",
+    "few_shot_seconds_per_article_without_prefix_cache": "Not empirically measured; direct Transformers backend used no prefix cache.",
+    "few_shot_seconds_per_article_with_prefix_cache": "Unknown; no prefix-cache backend was available in this run.",
+    "estimated_test_runtime_7x150x2_minutes": 100.2,
+    "estimated_test_runtime_7x200x2_minutes": 133.6
+  },
+  "gemma_attempt": {
+    "repo": "unsloth/gemma-3-4b-it-bnb-4bit",
+    "revision": "eb03c885bc2cc913fe792994bc766006f14ad72d",
+    "license": "Gemma terms (README link: https://ai.google.dev/gemma/terms)",
+    "ungated": true,
+    "result": {
+      "n": 100,
+      "accuracy": 0.29,
+      "accuracy_bootstrap_95ci": [
+        0.2,
+        0.38
+      ],
+      "macro_f1": 0.15237629037629039,
+      "weighted_f1": 0.24536197136197138,
+      "mean_seconds_per_article": 3.4829710049999947,
+      "median_seconds_per_article": 4.069131900000002,
+      "p95_seconds_per_article": 4.227380000000267,
+      "total_seconds": 348.6458563000001,
+      "peak_allocated_vram_gib": 8.88368034362793,
+      "peak_reserved_vram_gib": 10.875,
+      "shared_gpu_memory_spillover": false,
+      "device_map": {},
+      "majority_baseline_accuracy": 0.13,
+      "majority_label": "Economy",
+      "token_counts_50": {
+        "median": 586.5,
+        "p95": 1019,
+        "max": 2322,
+        "n": 50
+      },
+      "article_truncation_tokens": 400,
+      "demonstration_truncation_tokens": 100,
+      "revision": "eb03c885bc2cc913fe792994bc766006f14ad72d",
+      "repo": "unsloth/gemma-3-4b-it-bnb-4bit"
+    }
+  },
+  "go_no_go_threshold_accuracy": 0.35
+}

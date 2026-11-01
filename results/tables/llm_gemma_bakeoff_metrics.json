@@ -1,0 +1,30 @@
+{
+  "n": 100,
+  "accuracy": 0.29,
+  "accuracy_bootstrap_95ci": [
+    0.2,
+    0.38
+  ],
+  "macro_f1": 0.15237629037629039,
+  "weighted_f1": 0.24536197136197138,
+  "mean_seconds_per_article": 3.4829710049999947,
+  "median_seconds_per_article": 4.069131900000002,
+  "p95_seconds_per_article": 4.227380000000267,
+  "total_seconds": 348.6458563000001,
+  "peak_allocated_vram_gib": 8.88368034362793,
+  "peak_reserved_vram_gib": 10.875,
+  "shared_gpu_memory_spillover": false,
+  "device_map": {},
+  "majority_baseline_accuracy": 0.13,
+  "majority_label": "Economy",
+  "token_counts_50": {
+    "median": 586.5,
+    "p95": 1019,
+    "max": 2322,
+    "n": 50
+  },
+  "article_truncation_tokens": 400,
+  "demonstration_truncation_tokens": 100,
+  "revision": "eb03c885bc2cc913fe792994bc766006f14ad72d",
+  "repo": "unsloth/gemma-3-4b-it-bnb-4bit"
+}

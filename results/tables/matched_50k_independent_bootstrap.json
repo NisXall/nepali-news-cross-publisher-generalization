@@ -1,0 +1,281 @@
+{
+  "method": "independent document bootstrap; A and B have different test rows",
+  "resamples": 2000,
+  "seed": 42,
+  "interval": "percentile 95% interval",
+  "results": [
+    {
+      "condition": "A",
+      "model": "TF-IDF LinearSVC",
+      "rows": 10000,
+      "resamples": 2000,
+      "seed": 42,
+      "point_estimate": {
+        "rows": 10000,
+        "accuracy": 0.764,
+        "macro_f1": 0.7207955571404354,
+        "weighted_f1": 0.7584612395200595
+      },
+      "accuracy_ci95": [
+        0.7550975,
+        0.7721
+      ],
+      "macro_f1_ci95": [
+        0.7085330535611774,
+        0.7317710151453741
+      ]
+    },
+    {
+      "condition": "B",
+      "model": "TF-IDF LinearSVC",
+      "rows": 10000,
+      "resamples": 2000,
+      "seed": 42,
+      "point_estimate": {
+        "rows": 10000,
+        "accuracy": 0.759,
+        "macro_f1": 0.7233753824120362,
+        "weighted_f1": 0.7536797282556261
+      },
+      "accuracy_ci95": [
+        0.7505,
+        0.7676
+      ],
+      "macro_f1_ci95": [
+        0.711346380557318,
+        0.7341580047315749
+      ]
+    },
+    {
+      "condition": "A",
+      "model": "MiniLM LinearSVC",
+      "rows": 10000,
+      "resamples": 2000,
+      "seed": 42,
+      "point_estimate": {
+        "rows": 10000,
+        "accuracy": 0.6985,
+        "macro_f1": 0.6046247837881567,
+        "weighted_f1": 0.6837192759146408
+      },
+      "accuracy_ci95": [
+        0.6895,
+        0.7070025
+      ],
+      "macro_f1_ci95": [
+        0.5912915728221689,
+        0.6164894013485809
+      ]
+    },
+    {
+      "condition": "B",
+      "model": "MiniLM LinearSVC",
+      "rows": 10000,
+      "resamples": 2000,
+      "seed": 42,
+      "point_estimate": {
+        "rows": 10000,
+        "accuracy": 0.6982,
+        "macro_f1": 0.6120422739403869,
+        "weighted_f1": 0.6837818549256297
+      },
+      "accuracy_ci95": [
+        0.6890975,
+        0.7069
+      ],
+      "macro_f1_ci95": [
+        0.5987520757605558,
+        0.6241019748783964
+      ]
+    },
+    {
+      "condition": "A",
+      "model": "XLM-RoBERTa-base",
+      "rows": 10000,
+      "resamples": 2000,
+      "seed": 42,
+      "point_estimate": {
+        "rows": 10000,
+        "accuracy": 0.8364,
+        "macro_f1": 0.7920752078738716,
+        "weighted_f1": 0.8355549759967944
+      },
+      "accuracy_ci95": [
+        0.8294,
+        0.8431025
+      ],
+      "macro_f1_ci95": [
+        0.7806450683069155,
+        0.8019899412157225
+      ]
+    },
+    {
+      "condition": "B",
+      "model": "XLM-RoBERTa-base",
+      "rows": 10000,
+      "resamples": 2000,
+      "seed": 42,
+      "point_estimate": {
+        "rows": 10000,
+        "accuracy": 0.822,
+        "macro_f1": 0.7781987032120975,
+        "weighted_f1": 0.8203697757467647
+      },
+      "accuracy_ci95": [
+        0.8145975,
+        0.8289
+      ],
+      "macro_f1_ci95": [
+        0.7669429280123043,
+        0.7880925735134792
+      ]
+    },
+    {
+      "condition": "C_Aarthiknews",
+      "model": "XLM-RoBERTa-base",
+      "rows": 25965,
+      "resamples": 2000,
+      "seed": 42,
+      "point_estimate": {
+        "rows": 25965,
+        "accuracy": 0.4237627575582515,
+        "macro_f1": 0.15229416899583392,
+        "weighted_f1": 0.44732969140704715
+      },
+      "accuracy_ci95": [
+        0.41775466974773734,
+        0.429579241286347
+      ],
+      "macro_f1_ci95": [
+        0.14996025195730417,
+        0.15462940733822292
+      ]
+    },
+    {
+      "condition": "C_Ekantipur",
+      "model": "XLM-RoBERTa-base",
+      "rows": 29875,
+      "resamples": 2000,
+      "seed": 42,
+      "point_estimate": {
+        "rows": 29875,
+        "accuracy": 0.642979079497908,
+        "macro_f1": 0.27124680589294625,
+        "weighted_f1": 0.694839264933979
+      },
+      "accuracy_ci95": [
+        0.6376225941422594,
+        0.6483690376569038
+      ],
+      "macro_f1_ci95": [
+        0.2683820724897675,
+        0.274200710324153
+      ]
+    },
+    {
+      "condition": "C_Gorkhapatra",
+      "model": "XLM-RoBERTa-base",
+      "rows": 5059,
+      "resamples": 2000,
+      "seed": 42,
+      "point_estimate": {
+        "rows": 5059,
+        "accuracy": 0.5823285234236015,
+        "macro_f1": 0.26489380349017877,
+        "weighted_f1": 0.6544633315991839
+      },
+      "accuracy_ci95": [
+        0.5684917967977862,
+        0.5957699150029651
+      ],
+      "macro_f1_ci95": [
+        0.2601131505584444,
+        0.2691612747669029
+      ]
+    },
+    {
+      "condition": "C_Nagarik",
+      "model": "XLM-RoBERTa-base",
+      "rows": 11106,
+      "resamples": 2000,
+      "seed": 42,
+      "point_estimate": {
+        "rows": 11106,
+        "accuracy": 0.5858995137763371,
+        "macro_f1": 0.17995102171510385,
+        "weighted_f1": 0.5940577136969343
+      },
+      "accuracy_ci95": [
+        0.5760849990995858,
+        0.5949036556816135
+      ],
+      "macro_f1_ci95": [
+        0.17711765993642697,
+        0.1825960547979612
+      ]
+    },
+    {
+      "condition": "C_Nepalkhabar",
+      "model": "XLM-RoBERTa-base",
+      "rows": 69504,
+      "resamples": 2000,
+      "seed": 42,
+      "point_estimate": {
+        "rows": 69504,
+        "accuracy": 0.4855116252302026,
+        "macro_f1": 0.16416988161695054,
+        "weighted_f1": 0.5607149350808694
+      },
+      "accuracy_ci95": [
+        0.4816697600138121,
+        0.4891948664825046
+      ],
+      "macro_f1_ci95": [
+        0.1564407393022817,
+        0.1722864090428137
+      ]
+    },
+    {
+      "condition": "C_Onlinekhabar",
+      "model": "XLM-RoBERTa-base",
+      "rows": 66716,
+      "resamples": 2000,
+      "seed": 42,
+      "point_estimate": {
+        "rows": 66716,
+        "accuracy": 0.6079800947298999,
+        "macro_f1": 0.34351344697404074,
+        "weighted_f1": 0.6215030958151729
+      },
+      "accuracy_ci95": [
+        0.6043973709455003,
+        0.6117872774147131
+      ],
+      "macro_f1_ci95": [
+        0.33976502738674774,
+        0.3472572318753451
+      ]
+    },
+    {
+      "condition": "C_Setopati",
+      "model": "XLM-RoBERTa-base",
+      "rows": 15541,
+      "resamples": 2000,
+      "seed": 42,
+      "point_estimate": {
+        "rows": 15541,
+        "accuracy": 0.23080882826072968,
+        "macro_f1": 0.09985775648916187,
+        "weighted_f1": 0.24919678292406225
+      },
+      "accuracy_ci95": [
+        0.22405250627372755,
+        0.2375651502477318
+      ],
+      "macro_f1_ci95": [
+        0.09676217879440865,
+        0.10283169227382122
+      ]
+    }
+  ]
+}

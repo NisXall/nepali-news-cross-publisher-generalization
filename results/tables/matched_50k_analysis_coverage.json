@@ -1,0 +1,86 @@
+{
+  "available_prediction_sets": [
+    {
+      "condition": "A",
+      "model": "TF-IDF LinearSVC",
+      "prediction_file": "results\\tables\\matched50k_tfidf_A_test_predictions.csv",
+      "rows": 10000
+    },
+    {
+      "condition": "B",
+      "model": "TF-IDF LinearSVC",
+      "prediction_file": "results\\tables\\matched50k_tfidf_B_test_predictions.csv",
+      "rows": 10000
+    },
+    {
+      "condition": "A",
+      "model": "MiniLM LinearSVC",
+      "prediction_file": "results\\tables\\matched50k_minilm_A_test_predictions.csv",
+      "rows": 10000
+    },
+    {
+      "condition": "B",
+      "model": "MiniLM LinearSVC",
+      "prediction_file": "results\\tables\\matched50k_minilm_B_test_predictions.csv",
+      "rows": 10000
+    },
+    {
+      "condition": "A",
+      "model": "XLM-RoBERTa-base",
+      "prediction_file": "results\\tables\\matched50k_xlmr_A_test_predictions.csv",
+      "rows": 10000
+    },
+    {
+      "condition": "B",
+      "model": "XLM-RoBERTa-base",
+      "prediction_file": "results\\tables\\matched50k_xlmr_B_test_predictions.csv",
+      "rows": 10000
+    },
+    {
+      "condition": "C_Aarthiknews",
+      "model": "XLM-RoBERTa-base",
+      "prediction_file": "results\\tables\\matched50k_xlmr_C_Aarthiknews_test_predictions.csv",
+      "rows": 25965
+    },
+    {
+      "condition": "C_Ekantipur",
+      "model": "XLM-RoBERTa-base",
+      "prediction_file": "results\\tables\\matched50k_xlmr_C_Ekantipur_test_predictions.csv",
+      "rows": 29875
+    },
+    {
+      "condition": "C_Gorkhapatra",
+      "model": "XLM-RoBERTa-base",
+      "prediction_file": "results\\tables\\matched50k_xlmr_C_Gorkhapatra_test_predictions.csv",
+      "rows": 5059
+    },
+    {
+      "condition": "C_Nagarik",
+      "model": "XLM-RoBERTa-base",
+      "prediction_file": "results\\tables\\matched50k_xlmr_C_Nagarik_test_predictions.csv",
+      "rows": 11106
+    },
+    {
+      "condition": "C_Nepalkhabar",
+      "model": "XLM-RoBERTa-base",
+      "prediction_file": "results\\tables\\matched50k_xlmr_C_Nepalkhabar_test_predictions.csv",
+      "rows": 69504
+    },
+    {
+      "condition": "C_Onlinekhabar",
+      "model": "XLM-RoBERTa-base",
+      "prediction_file": "results\\tables\\matched50k_xlmr_C_Onlinekhabar_test_predictions.csv",
+      "rows": 66716
+    },
+    {
+      "condition": "C_Setopati",
+      "model": "XLM-RoBERTa-base",
+      "prediction_file": "results\\tables\\matched50k_xlmr_C_Setopati_test_predictions.csv",
+      "rows": 15541
+    }
+  ],
+  "not_available": [
+    "Matched C TF-IDF per-document predictions",
+    "Matched C MiniLM per-document predictions"
+  ]
+}

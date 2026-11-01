@@ -1,0 +1,14 @@
+{
+  "status": "BLOCKED",
+  "requested_threshold": 0.8,
+  "method": "word-shingle MinHash/LSH candidate audit followed by exact Jaccard verification",
+  "shingle_size_words": 5,
+  "minhash_permutations": 64,
+  "lsh_bands": 8,
+  "lsh_rows_per_band": 8,
+  "clean_rows": 231186,
+  "runtime_observed_seconds": 900,
+  "reason": "The initial pure-Python implementation exceeded 15 minutes without completing on the current laptop CPU and was stopped before producing counts.",
+  "interpretation": "No conclusion about near-duplicate prevalence is drawn. Existing fixed partitions remain exact-normalized-duplicate-aware only, and the requested Jaccard-0.8 safeguard remains an unresolved limitation.",
+  "next_step": "Optimize the audit implementation or run it separately before making any claim that near-duplicates are negligible."
+}

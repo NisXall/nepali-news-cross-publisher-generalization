@@ -1,0 +1,647 @@
+{
+  "method": "test-side reweighting to the corresponding training category prior",
+  "warning": "Diagnostic only; original test metrics remain the primary evaluation.",
+  "results": [
+    {
+      "condition": "A",
+      "model": "TF-IDF LinearSVC",
+      "diagnostic": "test-side prior matching; no retraining",
+      "raw_metrics": {
+        "rows": 10000,
+        "accuracy": 0.764,
+        "macro_f1": 0.7207955571404354,
+        "weighted_f1": 0.7584612395200595
+      },
+      "reweighted_metrics": {
+        "rows": 10000,
+        "target_prior": {
+          "Arts": 0.03336,
+          "Automobile": 0.02228,
+          "Bank": 0.04554,
+          "Business": 0.05036,
+          "Crime": 0.03534,
+          "Economy": 0.10232,
+          "Education": 0.01604,
+          "Employment": 0.00836,
+          "Entertainment": 0.09804,
+          "Health": 0.04096,
+          "Lifestyle": 0.01668,
+          "Literature": 0.01794,
+          "Market": 0.01892,
+          "Opinion": 0.01706,
+          "Politics": 0.13418,
+          "Society": 0.12024,
+          "Sports": 0.1055,
+          "Technology": 0.0278,
+          "Tourism": 0.01368,
+          "World": 0.0754
+        },
+        "excluded_test_only_categories": [],
+        "weighted_accuracy": 0.7639906744628182,
+        "weighted_macro_f1": 0.7207988379381706,
+        "weighted_category_support": {
+          "Arts": 333.6000000000003,
+          "Automobile": 222.7999999999995,
+          "Bank": 455.39999999999947,
+          "Business": 503.6000000000005,
+          "Crime": 353.400000000001,
+          "Economy": 1023.1999999999998,
+          "Education": 160.39999999999975,
+          "Employment": 83.60000000000002,
+          "Entertainment": 980.4000000000102,
+          "Health": 409.60000000000025,
+          "Lifestyle": 166.79999999999998,
+          "Literature": 179.40000000000026,
+          "Market": 189.1999999999999,
+          "Opinion": 170.60000000000028,
+          "Politics": 1341.799999999988,
+          "Society": 1202.3999999999971,
+          "Sports": 1055.0,
+          "Technology": 278.0,
+          "Tourism": 136.8,
+          "World": 754.0
+        }
+      }
+    },
+    {
+      "condition": "B",
+      "model": "TF-IDF LinearSVC",
+      "diagnostic": "test-side prior matching; no retraining",
+      "raw_metrics": {
+        "rows": 10000,
+        "accuracy": 0.759,
+        "macro_f1": 0.7233753824120362,
+        "weighted_f1": 0.7536797282556261
+      },
+      "reweighted_metrics": {
+        "rows": 10000,
+        "target_prior": {
+          "Arts": 0.03336,
+          "Automobile": 0.02228,
+          "Bank": 0.04554,
+          "Business": 0.05038,
+          "Crime": 0.03534,
+          "Economy": 0.1023,
+          "Education": 0.01604,
+          "Employment": 0.00836,
+          "Entertainment": 0.09804,
+          "Health": 0.04096,
+          "Lifestyle": 0.01668,
+          "Literature": 0.01794,
+          "Market": 0.01892,
+          "Opinion": 0.01706,
+          "Politics": 0.13418,
+          "Society": 0.12024,
+          "Sports": 0.1055,
+          "Technology": 0.0278,
+          "Tourism": 0.01368,
+          "World": 0.0754
+        },
+        "excluded_test_only_categories": [],
+        "weighted_accuracy": 0.7590196858069753,
+        "weighted_macro_f1": 0.7233972264961107,
+        "weighted_category_support": {
+          "Arts": 333.6000000000004,
+          "Automobile": 222.79999999999953,
+          "Bank": 455.39999999999947,
+          "Business": 503.8000000000011,
+          "Crime": 353.3999999999994,
+          "Economy": 1023.0,
+          "Education": 160.39999999999975,
+          "Employment": 83.60000000000002,
+          "Entertainment": 980.4000000000103,
+          "Health": 409.60000000000025,
+          "Lifestyle": 166.79999999999995,
+          "Literature": 179.4000000000002,
+          "Market": 189.19999999999987,
+          "Opinion": 170.60000000000036,
+          "Politics": 1341.7999999999877,
+          "Society": 1202.3999999999971,
+          "Sports": 1055.0,
+          "Technology": 278.0,
+          "Tourism": 136.8,
+          "World": 754.0
+        }
+      }
+    },
+    {
+      "condition": "A",
+      "model": "MiniLM LinearSVC",
+      "diagnostic": "test-side prior matching; no retraining",
+      "raw_metrics": {
+        "rows": 10000,
+        "accuracy": 0.6985,
+        "macro_f1": 0.6046247837881567,
+        "weighted_f1": 0.6837192759146408
+      },
+      "reweighted_metrics": {
+        "rows": 10000,
+        "target_prior": {
+          "Arts": 0.03336,
+          "Automobile": 0.02228,
+          "Bank": 0.04554,
+          "Business": 0.05036,
+          "Crime": 0.03534,
+          "Economy": 0.10232,
+          "Education": 0.01604,
+          "Employment": 0.00836,
+          "Entertainment": 0.09804,
+          "Health": 0.04096,
+          "Lifestyle": 0.01668,
+          "Literature": 0.01794,
+          "Market": 0.01892,
+          "Opinion": 0.01706,
+          "Politics": 0.13418,
+          "Society": 0.12024,
+          "Sports": 0.1055,
+          "Technology": 0.0278,
+          "Tourism": 0.01368,
+          "World": 0.0754
+        },
+        "excluded_test_only_categories": [],
+        "weighted_accuracy": 0.6985117802343056,
+        "weighted_macro_f1": 0.6046289305038746,
+        "weighted_category_support": {
+          "Arts": 333.6000000000003,
+          "Automobile": 222.80000000000004,
+          "Bank": 455.3999999999995,
+          "Business": 503.6000000000001,
+          "Crime": 353.4000000000009,
+          "Economy": 1023.1999999999998,
+          "Education": 160.3999999999998,
+          "Employment": 83.60000000000002,
+          "Entertainment": 980.4000000000095,
+          "Health": 409.60000000000025,
+          "Lifestyle": 166.79999999999995,
+          "Literature": 179.40000000000026,
+          "Market": 189.19999999999993,
+          "Opinion": 170.59999999999997,
+          "Politics": 1341.7999999999881,
+          "Society": 1202.3999999999962,
+          "Sports": 1055.0,
+          "Technology": 278.0,
+          "Tourism": 136.8,
+          "World": 754.0
+        }
+      }
+    },
+    {
+      "condition": "B",
+      "model": "MiniLM LinearSVC",
+      "diagnostic": "test-side prior matching; no retraining",
+      "raw_metrics": {
+        "rows": 10000,
+        "accuracy": 0.6982,
+        "macro_f1": 0.6120422739403869,
+        "weighted_f1": 0.6837818549256297
+      },
+      "reweighted_metrics": {
+        "rows": 10000,
+        "target_prior": {
+          "Arts": 0.03336,
+          "Automobile": 0.02228,
+          "Bank": 0.04554,
+          "Business": 0.05038,
+          "Crime": 0.03534,
+          "Economy": 0.1023,
+          "Education": 0.01604,
+          "Employment": 0.00836,
+          "Entertainment": 0.09804,
+          "Health": 0.04096,
+          "Lifestyle": 0.01668,
+          "Literature": 0.01794,
+          "Market": 0.01892,
+          "Opinion": 0.01706,
+          "Politics": 0.13418,
+          "Society": 0.12024,
+          "Sports": 0.1055,
+          "Technology": 0.0278,
+          "Tourism": 0.01368,
+          "World": 0.0754
+        },
+        "excluded_test_only_categories": [],
+        "weighted_accuracy": 0.6982483696578019,
+        "weighted_macro_f1": 0.6120590046326032,
+        "weighted_category_support": {
+          "Arts": 333.6000000000003,
+          "Automobile": 222.80000000000007,
+          "Bank": 455.39999999999947,
+          "Business": 503.8000000000004,
+          "Crime": 353.39999999999964,
+          "Economy": 1023.0,
+          "Education": 160.3999999999998,
+          "Employment": 83.60000000000002,
+          "Entertainment": 980.4000000000093,
+          "Health": 409.6000000000003,
+          "Lifestyle": 166.79999999999995,
+          "Literature": 179.4000000000002,
+          "Market": 189.19999999999987,
+          "Opinion": 170.59999999999994,
+          "Politics": 1341.7999999999877,
+          "Society": 1202.3999999999965,
+          "Sports": 1055.0,
+          "Technology": 278.0,
+          "Tourism": 136.8,
+          "World": 754.0
+        }
+      }
+    },
+    {
+      "condition": "A",
+      "model": "XLM-RoBERTa-base",
+      "diagnostic": "test-side prior matching; no retraining",
+      "raw_metrics": {
+        "rows": 10000,
+        "accuracy": 0.8364,
+        "macro_f1": 0.7920752078738716,
+        "weighted_f1": 0.8355549759967944
+      },
+      "reweighted_metrics": {
+        "rows": 10000,
+        "target_prior": {
+          "Arts": 0.03336,
+          "Automobile": 0.02228,
+          "Bank": 0.04554,
+          "Business": 0.05036,
+          "Crime": 0.03534,
+          "Economy": 0.10232,
+          "Education": 0.01604,
+          "Employment": 0.00836,
+          "Entertainment": 0.09804,
+          "Health": 0.04096,
+          "Lifestyle": 0.01668,
+          "Literature": 0.01794,
+          "Market": 0.01892,
+          "Opinion": 0.01706,
+          "Politics": 0.13418,
+          "Society": 0.12024,
+          "Sports": 0.1055,
+          "Technology": 0.0278,
+          "Tourism": 0.01368,
+          "World": 0.0754
+        },
+        "excluded_test_only_categories": [],
+        "weighted_accuracy": 0.8363952818781125,
+        "weighted_macro_f1": 0.7920875640763096,
+        "weighted_category_support": {
+          "Arts": 333.5999999999997,
+          "Automobile": 222.79999999999936,
+          "Bank": 455.39999999999947,
+          "Business": 503.60000000000116,
+          "Crime": 353.40000000000106,
+          "Economy": 1023.1999999999998,
+          "Education": 160.39999999999975,
+          "Employment": 83.60000000000002,
+          "Entertainment": 980.4000000000092,
+          "Health": 409.60000000000025,
+          "Lifestyle": 166.79999999999993,
+          "Literature": 179.40000000000038,
+          "Market": 189.19999999999987,
+          "Opinion": 170.60000000000025,
+          "Politics": 1341.7999999999874,
+          "Society": 1202.399999999996,
+          "Sports": 1055.0,
+          "Technology": 278.0,
+          "Tourism": 136.8,
+          "World": 754.0
+        }
+      }
+    },
+    {
+      "condition": "B",
+      "model": "XLM-RoBERTa-base",
+      "diagnostic": "test-side prior matching; no retraining",
+      "raw_metrics": {
+        "rows": 10000,
+        "accuracy": 0.822,
+        "macro_f1": 0.7781987032120975,
+        "weighted_f1": 0.8203697757467647
+      },
+      "reweighted_metrics": {
+        "rows": 10000,
+        "target_prior": {
+          "Arts": 0.03336,
+          "Automobile": 0.02228,
+          "Bank": 0.04554,
+          "Business": 0.05038,
+          "Crime": 0.03534,
+          "Economy": 0.1023,
+          "Education": 0.01604,
+          "Employment": 0.00836,
+          "Entertainment": 0.09804,
+          "Health": 0.04096,
+          "Lifestyle": 0.01668,
+          "Literature": 0.01794,
+          "Market": 0.01892,
+          "Opinion": 0.01706,
+          "Politics": 0.13418,
+          "Society": 0.12024,
+          "Sports": 0.1055,
+          "Technology": 0.0278,
+          "Tourism": 0.01368,
+          "World": 0.0754
+        },
+        "excluded_test_only_categories": [],
+        "weighted_accuracy": 0.8220179368224149,
+        "weighted_macro_f1": 0.778238619504139,
+        "weighted_category_support": {
+          "Arts": 333.6000000000012,
+          "Automobile": 222.79999999999967,
+          "Bank": 455.39999999999947,
+          "Business": 503.8000000000014,
+          "Crime": 353.4000000000001,
+          "Economy": 1023.0,
+          "Education": 160.39999999999972,
+          "Employment": 83.60000000000002,
+          "Entertainment": 980.4000000000094,
+          "Health": 409.6000000000003,
+          "Lifestyle": 166.79999999999995,
+          "Literature": 179.40000000000023,
+          "Market": 189.19999999999987,
+          "Opinion": 170.60000000000022,
+          "Politics": 1341.7999999999872,
+          "Society": 1202.3999999999967,
+          "Sports": 1055.0,
+          "Technology": 278.0,
+          "Tourism": 136.8,
+          "World": 754.0
+        }
+      }
+    },
+    {
+      "condition": "C_Aarthiknews",
+      "model": "XLM-RoBERTa-base",
+      "diagnostic": "test-side prior matching; no retraining",
+      "raw_metrics": {
+        "rows": 25965,
+        "accuracy": 0.4237627575582515,
+        "macro_f1": 0.15229416899583392,
+        "weighted_f1": 0.44732969140704715
+      },
+      "reweighted_metrics": {
+        "rows": 25965,
+        "target_prior": {
+          "Automobile": 0.10426731078904994,
+          "Bank": 0.07075281803542674,
+          "Business": 0.17018921095008058,
+          "Economy": 0.4512882447665057,
+          "Employment": 0.03683574879227054,
+          "Health": 0.12328904991948474,
+          "Market": 0.04337761674718197
+        },
+        "excluded_test_only_categories": [],
+        "weighted_accuracy": 0.5658360795669933,
+        "weighted_macro_f1": 0.5237210199878894,
+        "weighted_category_support": {
+          "Automobile": 2201.937922705338,
+          "Bank": 1759.4087420688209,
+          "Business": 1192.5377890235768,
+          "Economy": 4260.981554677215,
+          "Employment": 662.1509197324422,
+          "Health": 1729.5993774836597,
+          "Market": 1073.0785826833142
+        }
+      }
+    },
+    {
+      "condition": "C_Ekantipur",
+      "model": "XLM-RoBERTa-base",
+      "diagnostic": "test-side prior matching; no retraining",
+      "raw_metrics": {
+        "rows": 29875,
+        "accuracy": 0.642979079497908,
+        "macro_f1": 0.27124680589294625,
+        "weighted_f1": 0.694839264933979
+      },
+      "reweighted_metrics": {
+        "rows": 29875,
+        "target_prior": {
+          "Business": 0.1051821446895844,
+          "Entertainment": 0.24304771677783477,
+          "Health": 0.10241149307337094,
+          "Lifestyle": 0.048229861467419186,
+          "Literature": 0.019394561313494096,
+          "Market": 0.03612108773730118,
+          "Opinion": 0.01965110312981016,
+          "Sports": 0.2260133401744484,
+          "Technology": 0.06747049769112365,
+          "World": 0.1324781939456131
+        },
+        "excluded_test_only_categories": [],
+        "weighted_accuracy": 0.8394321767362243,
+        "weighted_macro_f1": 0.6321526856002708,
+        "weighted_category_support": {
+          "Business": 581.1895253749342,
+          "Entertainment": 5912.742991594717,
+          "Health": 2856.7124980799977,
+          "Lifestyle": 994.401245853778,
+          "Literature": 417.30052775153456,
+          "Market": 325.77131959301886,
+          "Opinion": 396.91755674054275,
+          "Sports": 6623.294613701494,
+          "Technology": 1587.1926610862336,
+          "World": 3688.3460902969696
+        }
+      }
+    },
+    {
+      "condition": "C_Gorkhapatra",
+      "model": "XLM-RoBERTa-base",
+      "diagnostic": "test-side prior matching; no retraining",
+      "raw_metrics": {
+        "rows": 5059,
+        "accuracy": 0.5823285234236015,
+        "macro_f1": 0.26489380349017877,
+        "weighted_f1": 0.6544633315991839
+      },
+      "reweighted_metrics": {
+        "rows": 5059,
+        "target_prior": {
+          "Economy": 0.1988548252415603,
+          "Education": 0.025527853990218303,
+          "Entertainment": 0.1948387609845322,
+          "Health": 0.07598711678396755,
+          "Opinion": 0.031094675732633508,
+          "Society": 0.2417193526581574,
+          "Sports": 0.20986917968905325,
+          "Tourism": 0.02210823491987753
+        },
+        "excluded_test_only_categories": [],
+        "weighted_accuracy": 0.8413357595050976,
+        "weighted_macro_f1": 0.7340013453801759,
+        "weighted_category_support": {
+          "Economy": 252.2292245257807,
+          "Education": 121.93506147529361,
+          "Entertainment": 817.4962777402201,
+          "Health": 214.80857912297145,
+          "Opinion": 111.53865455771104,
+          "Society": 463.5671627167442,
+          "Sports": 1055.637961040927,
+          "Tourism": 81.68689623710173
+        }
+      }
+    },
+    {
+      "condition": "C_Nagarik",
+      "model": "XLM-RoBERTa-base",
+      "diagnostic": "test-side prior matching; no retraining",
+      "raw_metrics": {
+        "rows": 11106,
+        "accuracy": 0.5858995137763371,
+        "macro_f1": 0.17995102171510385,
+        "weighted_f1": 0.5940577136969343
+      },
+      "reweighted_metrics": {
+        "rows": 11106,
+        "target_prior": {
+          "Arts": 0.05777580422340636,
+          "Economy": 0.24037892243931325,
+          "Education": 0.026396289717781726,
+          "Politics": 0.32376159463193216,
+          "Society": 0.28794158279060594,
+          "Technology": 0.06374580619696073
+        },
+        "excluded_test_only_categories": [],
+        "weighted_accuracy": 0.8178689722033209,
+        "weighted_macro_f1": 0.69210431166775,
+        "weighted_category_support": {
+          "Arts": 320.7036680347382,
+          "Economy": 2307.9696331952455,
+          "Education": 282.55593715794964,
+          "Politics": 3588.9627563681042,
+          "Society": 3137.313324183153,
+          "Technology": 632.0736604399349
+        }
+      }
+    },
+    {
+      "condition": "C_Nepalkhabar",
+      "model": "XLM-RoBERTa-base",
+      "diagnostic": "test-side prior matching; no retraining",
+      "raw_metrics": {
+        "rows": 69504,
+        "accuracy": 0.4855116252302026,
+        "macro_f1": 0.16416988161695054,
+        "weighted_f1": 0.5607149350808694
+      },
+      "reweighted_metrics": {
+        "rows": 69504,
+        "target_prior": {
+          "Automobile": 0.05461310714571498,
+          "Crime": 0.09834360246459152,
+          "Economy": 0.11930863407217733,
+          "Entertainment": 0.24421861246699209,
+          "Lifestyle": 0.04705129231015444,
+          "Literature": 0.050932223733696096,
+          "Politics": 0.10114427462591023,
+          "Society": 0.029927182523805718,
+          "Technology": 0.07049691926062256,
+          "World": 0.18396415139633515
+        },
+        "excluded_test_only_categories": [],
+        "weighted_accuracy": 0.8046709497552842,
+        "weighted_macro_f1": 0.6927750690444315,
+        "weighted_category_support": {
+          "Automobile": 3657.145510321698,
+          "Crime": 6713.7577679976275,
+          "Economy": 4506.676765284492,
+          "Entertainment": 655.5301639857679,
+          "Lifestyle": 925.5433077523511,
+          "Literature": 456.7733262434598,
+          "Politics": 6709.312379078624,
+          "Society": 1353.4887989727076,
+          "Technology": 4758.087607141446,
+          "World": 9326.730305050949
+        }
+      }
+    },
+    {
+      "condition": "C_Onlinekhabar",
+      "model": "XLM-RoBERTa-base",
+      "diagnostic": "test-side prior matching; no retraining",
+      "raw_metrics": {
+        "rows": 66716,
+        "accuracy": 0.6079800947298999,
+        "macro_f1": 0.34351344697404074,
+        "weighted_f1": 0.6215030958151729
+      },
+      "reweighted_metrics": {
+        "rows": 66716,
+        "target_prior": {
+          "Automobile": 0.04022526146419952,
+          "Bank": 0.0849118701089739,
+          "Crime": 0.046076208586264905,
+          "Employment": 0.012067578439259857,
+          "Entertainment": 0.07807357566005999,
+          "Health": 0.08052365976742486,
+          "Lifestyle": 0.017004315073502523,
+          "Literature": 0.029547282966430194,
+          "Market": 0.046039640166752,
+          "Opinion": 0.031265998683536904,
+          "Politics": 0.27773714620054124,
+          "Sports": 0.07979229137716669,
+          "Technology": 0.054998902947414614,
+          "Tourism": 0.01499305200029255,
+          "World": 0.10674321655818036
+        },
+        "excluded_test_only_categories": [],
+        "weighted_accuracy": 0.7275113604174097,
+        "weighted_macro_f1": 0.5772273517989922,
+        "weighted_category_support": {
+          "Automobile": 2534.9646154055736,
+          "Bank": 4140.849538984646,
+          "Crime": 1064.1133208009692,
+          "Employment": 465.35954536895616,
+          "Entertainment": 5050.24956616201,
+          "Health": 5280.548668953939,
+          "Lifestyle": 958.4650334406914,
+          "Literature": 1103.9677416997185,
+          "Market": 1450.1024449362799,
+          "Opinion": 929.544609688866,
+          "Politics": 1202.9759004304065,
+          "Sports": 5295.590048059273,
+          "Technology": 3132.698636559953,
+          "Tourism": 257.9398705336602,
+          "World": 3630.772656461807
+        }
+      }
+    },
+    {
+      "condition": "C_Setopati",
+      "model": "XLM-RoBERTa-base",
+      "diagnostic": "test-side prior matching; no retraining",
+      "raw_metrics": {
+        "rows": 15541,
+        "accuracy": 0.23080882826072968,
+        "macro_f1": 0.09985775648916187,
+        "weighted_f1": 0.24919678292406225
+      },
+      "reweighted_metrics": {
+        "rows": 15541,
+        "target_prior": {
+          "Arts": 0.04771483746379144,
+          "Automobile": 0.059140650144834245,
+          "Business": 0.15102993241068555,
+          "Economy": 0.41977792082394594,
+          "Employment": 0.023817186997103314,
+          "Health": 0.1665593820405536,
+          "Technology": 0.0758770518184744,
+          "Tourism": 0.05608303830061152
+        },
+        "excluded_test_only_categories": [],
+        "weighted_accuracy": 0.5938243398045147,
+        "weighted_macro_f1": 0.44798269183969075,
+        "weighted_category_support": {
+          "Arts": 46.48092787793616,
+          "Automobile": 815.5371934764512,
+          "Business": 2102.4540701411906,
+          "Economy": 5600.700705019256,
+          "Employment": 286.6350530273879,
+          "Health": 883.5283780702298,
+          "Technology": 1126.651547309792,
+          "Tourism": 781.0320568552767
+        }
+      }
+    }
+  ]
+}

@@ -24,6 +24,11 @@ ENV/
 /results/cache/
 /results/checkpoints/
 /results/models/
+/data/raw/*.parquet
+/data/processed/*.parquet
+/results/tables/matched_50k_c_manifests/*.parquet
+/results/tables/matched_50k_manifests/*.parquet
+results/llm/model_bakeoff/
 dist/
 build/
 *.log

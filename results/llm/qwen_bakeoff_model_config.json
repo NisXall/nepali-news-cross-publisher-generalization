@@ -1,0 +1,18 @@
+{
+  "model": "Qwen/Qwen2.5-3B-Instruct",
+  "revision": "aa8e72537993ba99e69dfaafa59ed015b17504d1",
+  "license": "Apache-2.0",
+  "quantization": "bitsandbytes 4-bit NF4",
+  "compute_dtype": "float16",
+  "runtime": "transformers with bitsandbytes",
+  "device_map": "auto",
+  "context_length": 32768,
+  "decoding": {
+    "method": "per-label log-likelihood scoring",
+    "temperature": 0,
+    "article_token_limit": 400,
+    "demonstration_token_limit": 100
+  },
+  "validation_manifest": "results/tables/llm_validation_bakeoff_100_ids.csv",
+  "test_articles_accessed": false
+}

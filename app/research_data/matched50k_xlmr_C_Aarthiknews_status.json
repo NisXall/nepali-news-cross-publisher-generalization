@@ -1,0 +1,79 @@
+{
+  "condition": "C",
+  "held_out_source": "Aarthiknews",
+  "description": "matched 50k leave-one-source-out manifest; held-out publisher excluded from train and validation",
+  "matched_budget": true,
+  "near_duplicate_audit_status": "BLOCKED",
+  "status": "COMPLETED",
+  "model": "xlm-roberta-base",
+  "model_revision": "local cached revision; exact commit unavailable",
+  "text_field": "content",
+  "preprocessing_version": "content-v1",
+  "label_names": [
+    "Arts",
+    "Automobile",
+    "Bank",
+    "Business",
+    "Crime",
+    "Economy",
+    "Education",
+    "Employment",
+    "Entertainment",
+    "Health",
+    "Lifestyle",
+    "Literature",
+    "Market",
+    "Opinion",
+    "Politics",
+    "Society",
+    "Sports",
+    "Technology",
+    "Tourism",
+    "World"
+  ],
+  "seed": 42,
+  "train_rows": 50000,
+  "validation_rows": 10000,
+  "test_rows": 25965,
+  "evaluation_limit": null,
+  "train_categories": 20,
+  "validation_categories": 20,
+  "test_categories": 7,
+  "max_length": 256,
+  "learning_rate": 2e-05,
+  "epochs": 1,
+  "batch_size": 4,
+  "gradient_accumulation": 4,
+  "effective_batch_size": 16,
+  "mixed_precision": "bf16",
+  "device": "cuda",
+  "cuda_device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "package_versions": {
+    "transformers": "5.20.2",
+    "torch": "2.13.0+cu130"
+  },
+  "mean_training_loss": 0.7267514125061035,
+  "validation_history": [
+    {
+      "epoch": 1,
+      "accuracy": 0.8437,
+      "macro_f1": 0.7894231865189403,
+      "weighted_f1": 0.8431334772108637
+    }
+  ],
+  "best_epoch": 1,
+  "validation_metrics": {
+    "accuracy": 0.8437,
+    "macro_f1": 0.7894231865189403,
+    "weighted_f1": 0.8431334772108637
+  },
+  "test_metrics": {
+    "accuracy": 0.4237627575582515,
+    "macro_f1": 0.435126197130954,
+    "weighted_f1": 0.44732969140704715
+  },
+  "checkpoint": "C:\\Tech\\projects\\nepali-nlp-study\\results\\checkpoints\\matched50k_xlmr_C_Aarthiknews\\best",
+  "runtime_seconds": 2395.9965017999057,
+  "protocol_note": "Repository has exact normalized duplicate grouping but no implemented Jaccard-0.8 MinHash/LSH near-duplicate safeguard; no such safeguard is claimed here.",
+  "warning": "This is a full condition result; test labels were not used for checkpoint selection."
+}

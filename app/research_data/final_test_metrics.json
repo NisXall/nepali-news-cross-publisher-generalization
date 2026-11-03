@@ -1,0 +1,15 @@
+[
+  {
+    "experiment":"word_bigram_LinearSVC_c1_none",
+    "accuracy":0.7849604222,
+    "macro_f1":0.7503603152,
+    "weighted_f1":0.7815532293,
+    "seconds":230.9122759,
+    "n_features":300000,
+    "vectorizer":"word_bigram",
+    "classifier":"LinearSVC",
+    "C":1.0,
+    "class_weight":"none",
+    "stripped":false
+  }
+]

@@ -73,6 +73,28 @@ The demo labels scores honestly: TF-IDF displays calibrated probabilities,
 MiniLM displays raw margins, and XLM-R displays softmax scores that are not
 calibrated.
 
+## LLM pilot (validation only)
+
+This was a separate zero-shot, labels-only pilot on a fixed 100-row validation
+subset. Articles were truncated to the first 400 model tokens. The majority
+baseline was **0.1300**, and the predeclared go/no-go threshold was accuracy
+**>= 0.35**.
+
+| Model | Accuracy | Macro-F1 | Weighted-F1 | Accuracy 95% CI |
+|---|---:|---:|---:|---:|
+| Qwen2.5-3B-Instruct, 4-bit | 0.1900 | 0.1141 | 0.1823 | unavailable |
+| Gemma 3 4B IT, 4-bit | 0.2900 | 0.1524 | 0.2454 | [0.2000, 0.3800] |
+
+Neither model met the threshold, so the LLM stage stopped. No test articles,
+few-shot inference, or cross-publisher LLM evaluation was run. These results
+do not support general claims about LLM performance on Nepali.
+
+![LLM pilot accuracy](results/figures/paper_llm_pilot_accuracy_ci.png)
+
+Saved result sources: [`results/tables/llm_bakeoff_status.json`](results/tables/llm_bakeoff_status.json),
+[`results/tables/llm_gemma_bakeoff_metrics.json`](results/tables/llm_gemma_bakeoff_metrics.json),
+and [`notes/llm_protocol.md`](notes/llm_protocol.md).
+
 ## Limitations
 
 Labels are automatic and may be noisy. The partitions are exact-duplicate-aware

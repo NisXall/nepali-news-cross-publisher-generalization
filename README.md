@@ -1,132 +1,164 @@
-# Nepali News Topic Classification
+# Nepali News Topic Classification Under Publisher Shift
 
-Reproducible experiments on **Nepali news classification under publisher
-shift** using the [`Suyogyart/np20ng`](https://huggingface.co/datasets/Suyogyart/np20ng)
-dataset.
+Reproducible research on whether Nepali news-topic classifiers generalize
+when the publisher changes.
+
+## TL;DR
+
+- **Problem:** evaluate Nepali topic classification without treating a random
+  split as evidence of publisher generalization.
+- **Finding:** the frozen TF-IDF reference reaches **0.7504 macro-F1** on the
+  fixed test partition, while the held-out-publisher diagnostic averages
+  **0.4605** and ranges from **0.2851 to 0.6864**.
+- **Why it matters:** an ordinary random split allowed **156 duplicate groups**
+  to cross partitions; the fixed duplicate-aware partitions allow **zero**.
+- **Additional evidence:** a source-only probe reaches **0.7385 accuracy**,
+  showing that publisher identity is strongly associated with the labels.
 
 ## Live demo
 
-Try the Gradio demo:
-**[Nepali News Classifier](https://huggingface.co/spaces/Nisxal/nepali-news-demo)**
+**[Try the Nepali News Classifier on Hugging Face](https://huggingface.co/spaces/Nisxal/nepali-news-demo)**
 
-The demo accepts Nepali text and shows predictions from the saved TF-IDF,
-MiniLM, and XLM-R models when available.
+The demo loads the saved TF-IDF, MiniLM, and XLM-R serving artifacts when
+available. It reports startup time, per-model latency, top-3 predictions,
+agreement, text warnings, and score semantics. TF-IDF shows calibrated
+probabilities; MiniLM shows raw margins; XLM-R shows uncalibrated softmax
+scores.
 
 ## Paper
 
-**Technical report:** [arXiv link to be added](<ARXIV_REPORT_URL>)
+**Technical report:** in preparation.
 
-The report link is intentionally a placeholder until the manuscript is
-submitted.
+## Research question and protocol
 
-## Main result
+How well do Nepali news classifiers generalize to unseen publishers, and how
+much of the apparent performance is associated with duplicate exposure,
+publisher/category association, source-related text, imbalance, and model
+choice?
 
-The frozen reference is word-level TF-IDF with unigrams and bigrams followed
-by `LinearSVC(C=1.0)`. It was evaluated once on the untouched fixed test set.
+Dataset: [`Suyogyart/np20ng`](https://huggingface.co/datasets/Suyogyart/np20ng).
+The study uses content only, fixed train/validation/test assignments, seed 42,
+and a test-once rule: validation selects models and policies; the untouched
+test partition is evaluated only after selection.
 
-| Model / evaluation | Accuracy | Macro-F1 | Weighted-F1 |
-|---|---:|---:|---:|
-| TF-IDF reference — fixed test | **0.7850** | **0.7504** | **0.7816** |
-| MiniLM + LinearSVC — fixed test | 0.7114 | 0.6288 | 0.6979 |
-| XLM-R — matched A test | **0.8364** | **0.7921** | **0.8356** |
-| XLM-R — matched B test | 0.8220 | 0.7782 | 0.8204 |
+| Partition | Rows |
+|---|---:|
+| Train | 138,711 |
+| Validation | 46,237 |
+| Test | 46,238 |
 
-Matched A/B results use the same 50,000-train / 10,000-validation /
-10,000-test budget. They should not be treated as directly interchangeable
-with the full fixed-fold reference.
+The dataset contains 231,216 raw rows, 231,186 usable rows, 20 categories, and
+10 publishers. Exact normalized duplicate groups do not cross the fixed
+partitions. The partitions are not guaranteed to be fully near-duplicate-safe.
 
-## Publisher-shift result
+## Results
 
-The held-out-publisher diagnostic shows that performance varies substantially
-across publishers. It uses a bounded 10,000-feature TF-IDF model and
-present-label macro-F1.
+### Frozen fixed-partition test
+
+This is the principal reference result: word TF-IDF unigrams/bigrams with
+`min_df=2`, `max_features=300000`, `sublinear_tf=True`, and
+`LinearSVC(C=1.0)`. It was evaluated once on the untouched test set.
+
+| Metric | Score |
+|---|---:|
+| Accuracy | **0.7850** |
+| Macro-F1 | **0.7504** |
+| Weighted-F1 | **0.7816** |
+
+Accuracy bootstrap 95% CI: `[0.7813, 0.7885]`; macro-F1 bootstrap 95% CI:
+`[0.7453, 0.7553]`. Source:
+[`results/tables/final_test_metrics.json`](results/tables/final_test_metrics.json)
+and [`notes/classical_benchmark.md`](notes/classical_benchmark.md).
+
+### Matched-budget comparison
+
+These experiments use the same 50,000-train / 10,000-validation /
+10,000-test budget. They are not directly comparable with the full
+fixed-partition reference.
+
+| Model | Matched A macro-F1 | Matched B macro-F1 |
+|---|---:|---:|
+| TF-IDF + LinearSVC | 0.7208 | 0.7234 |
+| MiniLM + LinearSVC | 0.6046 | 0.6120 |
+| XLM-R | **0.7921** | 0.7782 |
+
+XLM-R used one epoch, one seed (42), maximum length 256, learning rate
+`2e-5`, batch size 4, and gradient accumulation 4.
+Source: [`results/tables/matched_50k_ab_degradation.csv`](results/tables/matched_50k_ab_degradation.csv).
+
+### Publisher-held-out diagnostic
+
+Seven eligible publishers were evaluated with a bounded 10,000-feature TF-IDF
+configuration and present-label macro-F1. This is a descriptive source-shift
+diagnostic; category coverage differs by publisher.
+
+| Quantity | Value |
+|---|---:|
+| Mean macro-F1 | 0.4605 |
+| Standard deviation | 0.1506 |
+| Publisher range | 0.2851–0.6864 |
 
 ![Held-out publisher macro-F1](results/figures/paper_heldout_publisher_macro_f1.png)
 
-Mean present-label macro-F1 across seven held-out publishers: **0.4605**
-(SD **0.1506**).
+### Additional diagnostics
 
-## Additional results
+| Diagnostic | Result |
+|---|---|
+| Random split duplicate groups crossing partitions | 156 |
+| Fixed duplicate-aware split crossing groups | 0 |
+| Source-only probe | 0.7385 accuracy; 0.6677 macro-F1 |
+| Calibrated test ECE | 0.0209 |
+| Abstention threshold | 0.2932 on maximum calibrated probability |
+| Accepted test coverage | 0.9836 |
+| Accepted test accuracy | 0.7942 |
 
-### Matched evaluation
+The source-only probe is a diagnostic, not a replacement for content
+classification. Sources:
+[`explanations/research_handoff.md`](explanations/research_handoff.md),
+[`results/tables/calibration_abstention_metrics.json`](results/tables/calibration_abstention_metrics.json),
+and [`results/tables/random_vs_grouped_metadata.json`](results/tables/random_vs_grouped_metadata.json).
 
 ![Matched A/B macro-F1](results/figures/paper_matched_ab_macro_f1.png)
 
-### Category distribution
-
 ![Publisher-category distribution](results/figures/paper_publisher_category_heatmap.png)
 
-## Dataset and protocol
+## Validation-only LLM pilot
 
-- 231,216 raw rows; 231,186 usable rows
-- 20 categories and 10 publishers
-- Content-only input
-- Fixed duplicate-aware partitions: 138,711 train / 46,237 validation /
-  46,238 test
-- Seed: 42
-- Exact normalized duplicate groups do not cross the fixed partitions
-- The final test partition is evaluated only after model selection
+This was a separate zero-shot, labels-only pilot on 100 validation rows, not a
+main result. The majority baseline was `0.13`; the predeclared go/no-go
+threshold was accuracy `>= 0.35`.
 
-## Models
+| Model | Accuracy | Macro-F1 | Weighted-F1 |
+|---|---:|---:|---:|
+| Qwen2.5-3B-Instruct, 4-bit | 0.19 | 0.1141 | 0.1823 |
+| Gemma 3 4B IT, 4-bit | 0.29 | 0.1524 | 0.2454 |
 
-- **TF-IDF + LinearSVC:** 300,000 maximum word unigram/bigram features,
-  `min_df=2`, `sublinear_tf=True`, `C=1.0`
-- **MiniLM:** `paraphrase-multilingual-MiniLM-L12-v2` embeddings with
-  LinearSVC
-- **XLM-R:** one-epoch `xlm-roberta-base` matched-budget experiment,
-  maximum length 256, seed 42
+The stage stopped below the threshold. No test articles, few-shot inference,
+or cross-publisher LLM evaluation was run.
 
-The demo labels scores honestly: TF-IDF displays calibrated probabilities,
-MiniLM displays raw margins, and XLM-R displays softmax scores that are not
-calibrated.
-
-## LLM pilot (validation only)
-
-This was a separate zero-shot, labels-only pilot on a fixed 100-row validation
-subset. Articles were truncated to the first 400 model tokens. The majority
-baseline was **0.1300**, and the predeclared go/no-go threshold was accuracy
-**>= 0.35**.
-
-| Model | Accuracy | Macro-F1 | Weighted-F1 | Accuracy 95% CI |
-|---|---:|---:|---:|---:|
-| Qwen2.5-3B-Instruct, 4-bit | 0.1900 | 0.1141 | 0.1823 | unavailable |
-| Gemma 3 4B IT, 4-bit | 0.2900 | 0.1524 | 0.2454 | [0.2000, 0.3800] |
-
-Neither model met the threshold, so the LLM stage stopped. No test articles,
-few-shot inference, or cross-publisher LLM evaluation was run. These results
-do not support general claims about LLM performance on Nepali.
-
-![LLM pilot accuracy](results/figures/paper_llm_pilot_accuracy_ci.png)
-
-Saved result sources: [`results/tables/llm_bakeoff_status.json`](results/tables/llm_bakeoff_status.json),
-[`results/tables/llm_gemma_bakeoff_metrics.json`](results/tables/llm_gemma_bakeoff_metrics.json),
-and [`notes/llm_protocol.md`](notes/llm_protocol.md).
-
-## Limitations
-
-Labels are automatic and may be noisy. The partitions are exact-duplicate-aware
-but not fully near-duplicate-safe. XLM-R uses one epoch and one seed, and the
-publisher analysis covers seven eligible publishers. The stopped LLM pilot
-used two small 4-bit models on 100 validation rows only; it is not evidence
-about LLMs generally.
-
-## Repository
+## Repository layout
 
 | Path | Purpose |
 |---|---|
-| [`src/`](src/) | Experiment and analysis scripts |
-| [`results/`](results/) | Saved metrics, figures, and artifacts |
-| [`notes/`](notes/) | Protocols, research notes, and handoff documentation |
-| [`app/`](app/) | Gradio demo and serving bundles |
+| [`src/`](src/) | Classical, neural, matched-budget, audit, and analysis scripts |
+| [`results/`](results/) | Saved metrics, figures, split metadata, and diagnostics |
 | [`tests/`](tests/) | Research pipeline tests |
+| [`notes/`](notes/) | Protocol, report, LLM, and reproduction documentation |
+| [`explanations/`](explanations/) | Current research handoff and interpretation |
+| [`app/`](app/) | Gradio demo, serving bundles, tests, and Space metadata |
 
-## Setup and reproduction
+The dataset, caches, and large training checkpoints are not required to clone
+the code repository. Saved split metadata and result tables document completed
+experiments; the fixed processed partitions are required to rerun training.
 
-The commands below are run from the repository root in PowerShell. The
-experiments expect the fixed processed partitions and saved artifacts already
-described in the protocol; they do not regenerate split assignments.
+## Setup and exact reproduction commands
 
-Create the local environment and install the neural experiment dependencies:
+Commands below run from the repository root. They preserve existing split
+assignments; they do not silently regenerate them.
+
+### Research environment
+
+PowerShell:
 
 ```powershell
 py -3.13 -m venv .venv
@@ -135,13 +167,27 @@ py -3.13 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install pytest pandas scikit-learn scipy joblib pyarrow
 ```
 
-Run the research tests:
+Linux/macOS:
+
+```bash
+python3.13 -m venv .venv
+. .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements-neural.txt
+python -m pip install pytest pandas scikit-learn scipy joblib pyarrow
+```
+
+Run tests:
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest tests -q
 ```
 
-Reproduce the principal classical analyses:
+```bash
+python -m pytest tests -q
+```
+
+Reproduce the principal classical diagnostics:
 
 ```powershell
 .\.venv\Scripts\python.exe src\classical_benchmark.py --experiment final-test
@@ -151,30 +197,80 @@ Reproduce the principal classical analyses:
 .\.venv\Scripts\python.exe src\classical_benchmark.py --experiment conflicts
 ```
 
-Run the neural and matched-budget checks:
+```bash
+python src/classical_benchmark.py --experiment final-test
+python src/classical_benchmark.py --experiment source-held-out
+python src/classical_benchmark.py --experiment random-grouped
+python src/classical_benchmark.py --experiment source-text
+python src/classical_benchmark.py --experiment conflicts
+```
+
+Run focused neural/matched checks:
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest tests\test_day8_neural.py -q
 .\.venv\Scripts\python.exe -m pytest tests\test_matched_budget.py -q
 ```
 
-The LLM pilot is not part of the default reproduction run. It was a
-validation-only experiment with no test inference; see
-[`notes/llm_protocol.md`](notes/llm_protocol.md).
+```bash
+python -m pytest tests/test_day8_neural.py -q
+python -m pytest tests/test_matched_budget.py -q
+```
 
-Run the local demo:
+The LLM pilot is not part of the default reproduction run. Its protocol and
+saved results are in [`notes/llm_protocol.md`](notes/llm_protocol.md).
+
+## Demo setup and reproduction
+
+The demo is a separate Gradio application under [`app/`](app/). Its pinned
+requirements are in [`app/requirements.txt`](app/requirements.txt).
+
+From the repository root:
 
 ```powershell
+.\.venv\Scripts\python.exe -m pip install -r app\requirements.txt
+.\.venv\Scripts\python.exe -m pytest app\test_app.py app\test_real_models.py -q
 .\.venv\Scripts\python.exe app\app.py
 ```
 
-See [`notes/evaluation_protocol.md`](notes/evaluation_protocol.md) for the
-fixed-split and test-once rules, [`notes/paper_pack.md`](notes/paper_pack.md)
-for result provenance, and [`app/README.md`](app/README.md) for deployment
-details.
+```bash
+python -m pip install -r app/requirements.txt
+python -m pytest app/test_app.py app/test_real_models.py -q
+python app/app.py
+```
 
-## License and data
+The demo loads models once at startup and isolates failures by model. TF-IDF
+uses the saved calibrated bundle; MiniLM uses the saved LinearSVC bundle plus
+the named sentence-transformer encoder; XLM-R uses the local deployment copy
+when present and otherwise falls back to `MODEL_REPO_ID` in
+[`app/config.py`](app/config.py). User text is not intentionally logged or
+stored. Do not submit private or sensitive text.
 
-Check the dataset card and redistribution terms before publishing article
-text. The public demo uses user-provided text and does not intentionally store
-submissions.
+## Limitations
+
+- Labels are automatically assigned and may be noisy.
+- Exact duplicate groups are protected across fixed partitions, but the split
+  is not fully near-duplicate-safe.
+- Publisher and category distributions are associated, so source-held-out
+  scores are descriptive rather than causal.
+- The source-held-out analysis covers seven eligible publishers.
+- MiniLM and XLM-R comparisons use different protocols; XLM-R uses one epoch
+  and one seed.
+- Calibration is fit on validation data and may not transfer to unseen
+  publishers or future data.
+- The LLM pilot covers two small 4-bit models, one prompt, and 100 validation
+  rows. It supports no general claim about LLMs for Nepali.
+- The repository does not currently declare a separate code-license file.
+  Check the dataset card and model licenses before redistribution.
+
+## Further reading
+
+- [`notes/paper_pack.md`](notes/paper_pack.md) — report-ready numbers and
+  source paths
+- [`notes/evaluation_protocol.md`](notes/evaluation_protocol.md) — split,
+  leakage, metrics, and test-once protocol
+- [`notes/final_report.md`](notes/final_report.md) — report narrative
+- [`explanations/research_handoff.md`](explanations/research_handoff.md) —
+  comprehensive experiment handoff
+- [`app/README.md`](app/README.md) — Space-specific metadata and deployment
+  details

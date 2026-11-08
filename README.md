@@ -12,6 +12,13 @@ Try the Gradio demo:
 The demo accepts Nepali text and shows predictions from the saved TF-IDF,
 MiniLM, and XLM-R models when available.
 
+## Paper
+
+**Technical report:** [arXiv link to be added](<ARXIV_REPORT_URL>)
+
+The report link is intentionally a placeholder until the manuscript is
+submitted.
+
 ## Main result
 
 The frozen reference is word-level TF-IDF with unigrams and bigrams followed
@@ -113,13 +120,47 @@ about LLMs generally.
 | [`app/`](app/) | Gradio demo and serving bundles |
 | [`tests/`](tests/) | Research pipeline tests |
 
-## Reproduction
+## Setup and reproduction
 
-Install the research environment, then run the focused tests:
+The commands below are run from the repository root in PowerShell. The
+experiments expect the fixed processed partitions and saved artifacts already
+described in the protocol; they do not regenerate split assignments.
+
+Create the local environment and install the neural experiment dependencies:
+
+```powershell
+py -3.13 -m venv .venv
+.\.venv\Scripts\python.exe -m pip install --upgrade pip
+.\.venv\Scripts\python.exe -m pip install -r requirements-neural.txt
+.\.venv\Scripts\python.exe -m pip install pytest pandas scikit-learn scipy joblib pyarrow
+```
+
+Run the research tests:
 
 ```powershell
 .\.venv\Scripts\python.exe -m pytest tests -q
 ```
+
+Reproduce the principal classical analyses:
+
+```powershell
+.\.venv\Scripts\python.exe src\classical_benchmark.py --experiment final-test
+.\.venv\Scripts\python.exe src\classical_benchmark.py --experiment source-held-out
+.\.venv\Scripts\python.exe src\classical_benchmark.py --experiment random-grouped
+.\.venv\Scripts\python.exe src\classical_benchmark.py --experiment source-text
+.\.venv\Scripts\python.exe src\classical_benchmark.py --experiment conflicts
+```
+
+Run the neural and matched-budget checks:
+
+```powershell
+.\.venv\Scripts\python.exe -m pytest tests\test_day8_neural.py -q
+.\.venv\Scripts\python.exe -m pytest tests\test_matched_budget.py -q
+```
+
+The LLM pilot is not part of the default reproduction run. It was a
+validation-only experiment with no test inference; see
+[`notes/llm_protocol.md`](notes/llm_protocol.md).
 
 Run the local demo:
 
@@ -128,7 +169,8 @@ Run the local demo:
 ```
 
 See [`notes/evaluation_protocol.md`](notes/evaluation_protocol.md) for the
-evaluation rules and [`app/README.md`](app/README.md) for demo deployment
+fixed-split and test-once rules, [`notes/paper_pack.md`](notes/paper_pack.md)
+for result provenance, and [`app/README.md`](app/README.md) for deployment
 details.
 
 ## License and data

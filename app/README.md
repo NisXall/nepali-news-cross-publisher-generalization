@@ -15,6 +15,8 @@ classification under publisher shift.
 
 **Live Space:** <https://huggingface.co/spaces/Nisxal/nepali-news-demo>
 
+**Technical report:** [arXiv link to be added](<ARXIV_REPORT_URL>)
+
 The demo accepts Nepali article text and displays predictions from three saved
 models when their artifacts are available:
 
@@ -170,7 +172,13 @@ few-shot inference, or cross-publisher LLM evaluation was run.
 
 ## Run locally
 
-From the repository root:
+From the repository root, install the pinned Space dependencies:
+
+```powershell
+.\.venv\Scripts\python.exe -m pip install -r app\requirements.txt
+```
+
+Launch the demo:
 
 ```powershell
 .\.venv\Scripts\python.exe app\app.py
@@ -182,9 +190,15 @@ Run the app tests:
 .\.venv\Scripts\python.exe -m pytest app\test_app.py app\test_real_models.py -q
 ```
 
-The application expects the saved bundles in the Space directory. XLM-R uses
+The application expects the saved bundles in the Space directory. The XLM-R
+loader uses
 the local `model_repo/xlmr-matched50k-A` folder when present and otherwise
 falls back to the model repository configured in `config.py`.
+
+The integration test loads all three available model artifacts and exercises
+all 20 category labels. It requires the MiniLM cache and XLM-R access, so the
+Space deployment is the canonical serving environment when those resources
+are unavailable locally.
 
 ## Reproducibility and artifacts
 

@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Nepali News Topic Classification Under Publisher Shift"
+authors:
+  - family-names: "Khanal"
+    given-names: "Nischal"
+license: MIT
+repository-code: "https://github.com/NisXall/nepali-news-cross-publisher-generalization"
+abstract: "Duplicate-aware evaluation of Nepali news topic classifiers under publisher shift (np20ng, 231k articles, 10 publishers)."
+keywords:
+  - distribution shift
+  - evaluation
+  - calibration
+  - Nepali NLP

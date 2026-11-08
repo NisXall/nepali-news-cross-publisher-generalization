@@ -8,8 +8,9 @@ when the publisher changes.
 - **Problem:** evaluate Nepali topic classification without treating a random
   split as evidence of publisher generalization.
 - **Finding:** the frozen TF-IDF reference reaches **0.7504 macro-F1** on the
-  fixed test partition, while the held-out-publisher diagnostic averages
-  **0.4605** and ranges from **0.2851 to 0.6864**.
+  fixed test partition. The held-out-publisher diagnostic averages **0.4605**
+  and ranges from **0.2851 to 0.6864**, but uses a different bounded model and
+  present-label metric; it is not a strict before/after drop.
 - **Why it matters:** an ordinary random split allowed **156 duplicate groups**
   to cross partitions; the fixed duplicate-aware partitions allow **zero**.
 - **Additional evidence:** a source-only probe reaches **0.7385 accuracy**,
@@ -82,9 +83,12 @@ fixed-partition reference.
 | MiniLM + LinearSVC | 0.6046 | 0.6120 |
 | XLM-R | **0.7921** | 0.7782 |
 
-XLM-R used one epoch, one seed (42), maximum length 256, learning rate
+XLM-R used one epoch and one seed (42), maximum length 256, learning rate
 `2e-5`, batch size 4, and gradient accumulation 4.
 Source: [`results/tables/matched_50k_ab_degradation.csv`](results/tables/matched_50k_ab_degradation.csv).
+
+A planned three-seed extension was attempted locally but did not complete
+within the available run; no seed-sweep result is reported here.
 
 ### Publisher-held-out diagnostic
 
